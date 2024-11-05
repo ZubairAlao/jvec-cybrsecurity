@@ -1,6 +1,6 @@
 import React from 'react'
 import Hero from '@/components/Hero'
-import { Head } from '@/components/seo/head'
+import { Head } from '@/components/seo/Head'
 import PenetrationTestingServices from '@/components/PenetrationTestingServices'
 import ComplianceCertifications from '@/components/ComplianceCertifications'
 import ConsultationCTA from '@/components/ConsultationCTA'
@@ -21,6 +21,6 @@ const Home = () => {
       <ContactUs />
     </div>
   )
-}
+} 
 
 export default Home
