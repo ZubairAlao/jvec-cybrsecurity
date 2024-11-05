@@ -1,6 +1,6 @@
 import React from 'react'
 import Accordion from './ui/accordion/accordion'
-import { BrandLogo, JvecApproachPenetrationAccordion } from '../constants'
+import { TestmonialBrandLogos, JvecApproachPenetrationAccordion } from '../constants'
 import ApproachBg from "@/assets/images/approach-bg.jpg"
 import SmallPenetrationTestingImg from "@/assets/images/home/small-penetration-testing-img.jpg"
 import MediumPenetrationTestingImg from "@/assets/images/home/medium-penetration-testing-img.jpg"
@@ -35,9 +35,9 @@ const JvecApproach = () => {
 
             <h3 className='heading-font-sizes text-center mt-[72px] container'>They Trust Us, and so can You</h3>
 
-            <div className='flex justify-center flex-wrap lg:flex-nowrap gap-8 lg:gap-32 bg-gradient-to-r from-[#1e1c1c] via-[#222222] to-[#080808] p-8 mt-[32px] '>
-              {BrandLogo.map((brand, index) => (
-                <img src={brand} alt="brand" key={index}  className='w-12 lg:w-full'/>
+            <div className='grid justify-center h-fit grid-cols-2  gap-8 lg:gap-32 bg-gradient-to-r from-[#1e1c1c] via-[#222222] to-[#080808] p-8 mt-[32px] '>
+              {TestmonialBrandLogos.map((brand, index) => (
+                <img key={index} src={brand.image} alt={brand.alt} className="w-full h-auto" />
               ))}
             </div>
         </div>

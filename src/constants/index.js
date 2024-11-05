@@ -22,6 +22,8 @@ import SSAE16Icon from "@/assets/icons/compliance-certifications/ssae16-type-ii.
 import IAASBIcon from "@/assets/icons/compliance-certifications/iaasb.svg"
 import ISAE304Icon from "@/assets/icons/compliance-certifications/isae-304.svg"
 
+const images = import.meta.glob('@/assets/icons/testmonial-brands/*.svg', { eager: true });
+
 export const navHeaders = [
     {
         label: "Home",
@@ -193,6 +195,11 @@ export const JvecApproachPenetrationAccordion = [
         text: "We value personalized service, working closely with your team to ensure you’re never “lost in the shuffle.” Our dedicated experts guide you through each step of the process, making complex security strategies accessible and actionable."
     },
 ]
+
+export const TestmonialBrandLogos = Object.keys(images).map((path) => ({
+    image: images[path].default || images[path],  // Use `.default` if you are using SVGs or other assets needing it
+    alt: path.split('/').pop().replace(/.svg$/, ''),  // Generate alt text from filename (optional)
+  }));
 
 export const BrandLogo = [
     OvisionsLogo, FigmaLogo, AppleLogo, SlackLogo

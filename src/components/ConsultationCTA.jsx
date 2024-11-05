@@ -3,10 +3,10 @@ import HeroBg from "@/assets/images/hero-bg.png"
 
 const ConsultationCTA = () => {
   return (
-    <section className='relative space-y-32 overflow-hidden pt-[139px] pb-[179px]'>
+    <section className='relative pages-vertical-padding overflow-hidden pt-[139px] pb-[179px]'>
         <div className='container flex lg:flex-row-reverse flex-col justify-center lg:gap-32 gap-8'>
             <div className='text-left space-y-7'>
-                <h1 className='text-6xl'>Take Action with JVEC Solutions’ Penetration Testing Services</h1>
+                <h1 className='heading-font-sizes'>Take Action with JVEC Solutions’ Penetration Testing Services</h1>
                 <p className='text-lg'>Defend your organization with cybersecurity solutions forged by 45 years of expertise. With JVEC Solutions, you’re not just identifying risks; you’re building a proactive, resilient defense against the evolving cyber threat landscape</p>
             </div>
             <div className='max-w-[856px] lg:-ml-60'>
