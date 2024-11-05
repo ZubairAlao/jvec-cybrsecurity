@@ -1,5 +1,4 @@
 import React from 'react'
-import TestingImg from "@/assets/images/testing_img.png"
 import SmallPenetrationTestingImg from "@/assets/images/home/small-penetration-testing-img.jpg"
 import MediumPenetrationTestingImg from "@/assets/images/home/medium-penetration-testing-img.jpg"
 import LargePenetrationTestingImg from "@/assets/images/home/large-penetration-testing-img.jpg"
@@ -7,10 +6,10 @@ import WhyChooseJvec from './WhyChooseJvec'
 
 const PenetrationTestingInfo = () => {
   return (
-    <section className='min-h-screen pages-vertical-padding'>
+    <section className='min-h-screen pages-vertical-padding overflow-hidden'>
         <div className='flex justify-center flex-col md:flex-row items-center gap-9 text-center md:text-left'>
             <div className='space-y-3 max-w-[602px] container'>
-                <h1 className='text-[1.86rem] font-semibold lg:text-6xl'>What is Penetration Testing?</h1>
+                <h1 className='heading-font-sizes font-semibold'>What is Penetration Testing?</h1>
                 <div className='space-y-3'>
                     <p className='text-lg'>
                         Penetration testing, or ethical hacking, is a proactive security measure where authorized experts simulate real-world cyberattacks on an organization’s systems, mimicking the methods and behaviors of malicious attackers. These simulated attacks reveal vulnerabilities in your network, applications, and data protection, providing critical insights that help you fortify your defenses.
@@ -22,13 +21,13 @@ const PenetrationTestingInfo = () => {
 
             </div>
 
-            <div className='w-full'>
-            <picture>
-                <source srcSet={SmallPenetrationTestingImg} media="(max-width: 767x)" />
-                <source srcSet={MediumPenetrationTestingImg} media="(min-width: 768px) and (max-width: 1023px)" />
-                <source srcSet={LargePenetrationTestingImg} media="(min-width: 1024px)" />
-                <img src={SmallPenetrationTestingImg} alt="Testing Image" className='h-full w-full object-cover md:rounded-md' />
-            </picture>
+            <div className='w-full md:-mr-32'>
+                <picture>
+                    <source srcSet={SmallPenetrationTestingImg} media="(max-width: 767x)" />
+                    <source srcSet={MediumPenetrationTestingImg} media="(min-width: 768px) and (max-width: 1023px)" />
+                    <source srcSet={LargePenetrationTestingImg} media="(min-width: 1024px)" />
+                    <img src={SmallPenetrationTestingImg} alt="Testing Image" className='h-full w-full object-cover md:rounded-md' />
+                </picture>
             </div>
         </div>
 

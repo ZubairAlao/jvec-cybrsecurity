@@ -2,7 +2,7 @@ import React from 'react';
 
 const PenetrationTestingServices = () => {
   return (
-    <section className="pages-vertical-padding bg-[#0E0E0E] text-white min-h-screen">
+    <section className="pages-vertical-padding bg-[#0E0E0E] text-white">
       <div className="container flex justify-center items-center flex-col">
         <h1 className="lg:text-6xl text-[1.875rem] font-semibold md:max-w-[660px] lg:max-w-[964px] text-center mb-[38px] lg:mb-24">
           Our Network Penetration Testing Services

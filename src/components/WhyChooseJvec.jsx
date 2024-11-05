@@ -5,7 +5,7 @@ const WhyChooseJvec = () => {
   return (
     <div className='mt-[56px] md:mt[72px] lg:mt-[150px]'>
       <div className='container'>
-        <h1 className='text-[1.85rem] lg:text-6xl font-semibold text-center'>Why Choose JVEC Solutions for Penetration Testing?</h1>
+        <h1 className='text-[1.85rem] lg:text-6xl font-semibold text-center md:max-w-[660px] mx-auto lg:max-w-[964px]'>Why Choose JVEC Solutions for Penetration Testing?</h1>
         
         <div className="grid grid-cols-1 md:grid-cols-2 auto-rows-max gap-4 mt-[30px] lg:mt-[80px]">
           {WhyChooseJvecListOne.map((reason, index) => (

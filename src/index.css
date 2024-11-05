@@ -25,6 +25,10 @@ body {
   @apply text-sm md:text-base lg:text-xl;
 }
 
+.heading-font-sizes {
+  @apply text-3xl md:text-5xl lg:text-6xl;
+}
+
 .pages-vertical-padding {
   @apply py-[56px] md:py-[72px] lg:py-[150px];
 }
