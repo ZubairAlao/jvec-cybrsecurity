@@ -1,8 +1,3 @@
-import AppleLogo from "@/assets/icons/apple_logo.svg"
-import FigmaLogo from "@/assets/icons/figma_logo.svg"
-import OvisionsLogo from "@/assets/icons/ovisions_logo.svg"
-import SlackLogo from "@/assets/icons/slack_logo.svg"
-
 import PCIDSSComplaintIcon from "@/assets/icons/compliance-certifications/pci-dss-complaint.svg"
 import ISO27001Icon from "@/assets/icons/compliance-certifications/iso-27001.svg"
 import CybersecurityIcon from "@/assets/icons/compliance-certifications/cyber-security-1-1.svg"
@@ -23,6 +18,11 @@ import IAASBIcon from "@/assets/icons/compliance-certifications/iaasb.svg"
 import ISAE304Icon from "@/assets/icons/compliance-certifications/isae-304.svg"
 
 const images = import.meta.glob('@/assets/icons/testmonial-brands/*.svg', { eager: true });
+
+import FacebookIcon from "@/assets/icons/social-logos/facebook.svg"
+import TwitterIcon from "@/assets/icons/social-logos/twitter.svg"
+import LinkedInIcon from "@/assets/icons/social-logos/linkedin.svg"
+import InstagramIcon from "@/assets/icons/social-logos/instagram.svg"
 
 export const navHeaders = [
     {
@@ -201,8 +201,27 @@ export const TestmonialBrandLogos = Object.keys(images).map((path) => ({
     alt: path.split('/').pop().replace(/.svg$/, ''),  // Generate alt text from filename (optional)
   }));
 
-export const BrandLogo = [
-    OvisionsLogo, FigmaLogo, AppleLogo, SlackLogo
+  export const SocialIcons = [
+    {
+        image: InstagramIcon,
+        link: "https://www.instagram.com",
+        alt: "instagram",
+    },
+    {
+        image: TwitterIcon,
+        link: "https://www.twitter.com",
+        alt: "twitter",
+    },
+    {
+        image: LinkedInIcon,
+        link: "https://www.linkedin.com",
+        alt: "linkedin",
+    },
+    {
+        image: FacebookIcon,
+        link: "https://www.facebook.com",
+        alt: "facebook",
+    },
 ]
 
 export const JvecServicesFooter = [

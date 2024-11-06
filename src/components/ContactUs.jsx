@@ -5,11 +5,11 @@ import { motion } from 'framer-motion'
 
 const ContactUs = () => {
   return (
-    <section className='mb-[160px]'>
-        <div className="container flex items-center flex-col lg:flex-row justify-between">
-            <div className='max-w-[406px] space-y-7'>
+    <section className='pb-[56px] md:pb-[72px] lg:pb-[150px]'>
+        <div className="container flex items-center flex-col md:flex-row justify-between">
+            <div className='lg:max-w-[406px] md:max-w-[300px] space-y-7'>
                 <h3>READY TO GET STARTED</h3>
-                <p>Send us an Email</p>
+                <p className='font-semibold text-lg md:text-2xl lg:text-4xl'>Send us an Email</p>
                 <div className='space-y-7'>
                     <p>Join numerous corporations, organizations and businesses as they scale their teams, tap into new market opportunities and build innovative products with Jvec solutions.
                     </p>
@@ -17,7 +17,7 @@ const ContactUs = () => {
                 </div>
             </div>
 
-            <form action="" className='space-y-4 text-[10px] contact-form w-full max-w-[611px]'>
+            <form action="" className='space-y-4 text-[10px] contact-form w-full max-w-[400px] lg:max-w-[611px]'>
                 <div>
                     <label htmlFor="fullName">FULL NAME</label>
                     <input type="text" id="fullName" className="contact-input" placeholder="John Doe"  autoComplete="name" />
@@ -40,10 +40,10 @@ const ContactUs = () => {
 
                 <div>
                     <label htmlFor="message">MESSAGE</label>
-                    <textarea id="message" className="contact-input min-h-[120px] lg:min-h-[200px]" placeholder="Type in your message" autoComplete="off" /> 
+                    <textarea id="message" className="contact-input min-h-[120px] lg:min-h-[176px]" placeholder="Type in your message" autoComplete="off" /> 
                 </div>
 
-                <Button text="Send Message" />
+                <Button children="Send Message" />
             </form>
         </div>
 

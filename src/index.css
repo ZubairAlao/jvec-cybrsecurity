@@ -147,5 +147,6 @@ body {
 
 .footer-link:hover {
   text-decoration: underline;
+  @apply text-sm;
   transition: color 0.2s ease-in-out;
 }

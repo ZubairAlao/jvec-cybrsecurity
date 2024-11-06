@@ -8,7 +8,7 @@ const Logo = () => {
         to="/"
         className='cursor-pointer relative z-30'
         aria-label="Home">
-        <img src={HeaderLogo} alt="Website Logo" className="w-[63px] md:w-[50px] lg:w-[90px] h-fit" />
+        <img src={HeaderLogo} alt="Website Logo" className="w-[63px] md:w-[72px] lg:w-[90px] h-fit" />
     </Link>
   )
 }

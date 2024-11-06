@@ -1,7 +1,6 @@
 import React from 'react'
 import Accordion from './ui/accordion/accordion'
 import { TestmonialBrandLogos, JvecApproachPenetrationAccordion } from '../constants'
-import ApproachBg from "@/assets/images/approach-bg.jpg"
 import SmallPenetrationTestingImg from "@/assets/images/home/small-penetration-testing-img.jpg"
 import MediumPenetrationTestingImg from "@/assets/images/home/medium-penetration-testing-img.jpg"
 import LargePenetrationTestingImg from "@/assets/images/home/large-penetration-testing-img.jpg"
@@ -19,25 +18,21 @@ const JvecApproach = () => {
                 </p>
                 <Accordion accordionData={JvecApproachPenetrationAccordion} />
               </div>
-              <div className='w-full max-w-[856px] h-auto -mr-20'>
-                  <img src={ApproachBg} alt="approach img" className='object-cover w-full h-full' />
-              </div>
-            </div>
-
-            <div className='w-full md:-mr-32'>
+              <div className='w-full max-w-[856px] '>
                 <picture>
                     <source srcSet={SmallPenetrationTestingImg} media="(max-width: 767x)" />
                     <source srcSet={MediumPenetrationTestingImg} media="(min-width: 768px) and (max-width: 1023px)" />
                     <source srcSet={LargePenetrationTestingImg} media="(min-width: 1024px)" />
                     <img src={SmallPenetrationTestingImg} alt="Testing Image" className='h-full w-full object-cover md:rounded-md' />
                 </picture>
+              </div>
             </div>
 
             <h3 className='heading-font-sizes text-center mt-[72px] container'>They Trust Us, and so can You</h3>
 
-            <div className='grid justify-center h-fit grid-cols-2  gap-8 lg:gap-32 bg-gradient-to-r from-[#1e1c1c] via-[#222222] to-[#080808] p-8 mt-[32px] '>
+            <div className='grid justify-center h-fit grid-cols-2 md:grid-cols-4  gap-8 lg:gap-32 bg-gradient-to-r from-[#1e1c1c] via-[#222222] to-[#080808] p-8 mt-[32px] '>
               {TestmonialBrandLogos.map((brand, index) => (
-                <img key={index} src={brand.image} alt={brand.alt} className="w-full h-auto" />
+                <img key={index} src={brand.image} alt={brand.alt} className="w-full h-[40px] lg:h-[80px]" />
               ))}
             </div>
         </div>
