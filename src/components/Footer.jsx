@@ -1,7 +1,11 @@
-import { JvecTrainingFooter, JvecServicesFooter } from "@/constants"
 import Logo from "./Logo"
 import { Link } from "./ui/link/link"
-import { SocialIcons } from "@/constants"
+import { 
+  SocialIcons,
+  JvecAboutLinks,
+  JvecMoreLinks,
+  JvecTrainingLinks,
+  JvecServicesLinks } from "@/constants"
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -25,8 +29,8 @@ const Footer = () => {
             <div className="space-y-5">
               <h3 className="text-lg">SERVICES</h3>
               <div className="flex flex-col gap-4">
-                {JvecServicesFooter.map((service) => (
-                  <Link to="#" key={service.name} className="footer-link">{service.name}</Link>
+                {JvecServicesLinks.map((service) => (
+                  <Link to={service.link} key={service.name} className="footer-link">{service.name}</Link>
                 ))}
               </div>
             </div>
@@ -34,8 +38,8 @@ const Footer = () => {
             <div className="space-y-5">
               <h3 className="text-lg">TRAINING</h3>
               <div className="flex flex-col gap-4">
-              {JvecTrainingFooter.map((training) => (
-                <Link to="#" key={training.name} className="footer-link">{training.name}</Link>
+              {JvecTrainingLinks.map((training) => (
+                <Link to={training.link} key={training.name} className="footer-link">{training.name}</Link>
               ))}
               </div>
             </div>
@@ -47,22 +51,22 @@ const Footer = () => {
             <div className="space-y-5">
               <h3 className="text-lg">ABOUT</h3>
                 <div className="text-sm flex flex-col gap-4">
-                  <Link to="#" className="footer-link">About Us</Link>
-                  <Link to="#" className="footer-link">Internship</Link>
-                  <Link to="#" className="footer-link">Training</Link>
+                  {JvecAboutLinks.map((link) => (
+                    <Link to={link.link} key={link.name} className="footer-link">{link.name}</Link>
+                  ))}
                 </div>
             </div>
 
             <div className="space-y-5">
               <h3 className="text-lg">More</h3>
                 <div className="text-sm flex flex-col gap-4">
-                  <Link to="#" className="footer-link">Blog</Link>
-                  <Link to="#" className="footer-link">Portfolio</Link>
-                  <Link to="#" className="footer-link">Testmonial</Link>
+                {JvecMoreLinks.map((link) => (
+                  <Link to={link.link} key={link.name} className="footer-link">{link.name}</Link>
+                ))}
                 </div>
             </div>
           </div>
-          <p>© {currentYear} JVEC Solutions.All right reserved.</p>
+          <p>©{currentYear} JVEC Solutions.All right reserved.</p>
         </div>
     </footer>
   )

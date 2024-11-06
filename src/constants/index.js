@@ -32,20 +32,50 @@ export const navHeaders = [
     {
         label: "Service",
         link: "/services",
-        children: [
-
+        subMenu: [
+            { id: 1, label: "Website Development",  link:"#" },
+            { id: 2, label: "Mobile App Development",  link:"#" },
+            { id: 3, label: "Software Development",  link:"#" },
+            { id: 4, label: "Digital Marketing",  link:"#" },
+            { id: 5, label: "Product Design",  link:"#" },
+            { id: 6, label: "Graphic Design",  link:"#" },
+            { id: 7, label: "Motion Design / Video Editing",  link:"#" },
+            { id: 8, label: "Consulting",  link:"#" },
+            { id: 9, label: "Corporate Training",  link:"#" },
+            { id: 10, label: "Data Consultancy",  link:"#" },
+            { id: 11, label: "Product Management",  link:"#" },
+            { id: 12, label: "Project Management",  link:"#" },
+            { id: 13, label: "Predictive Analysis",  link:"#" }
         ]
     },
     {
         label: "About",
         link: "/about",
-        children: [
-            
+        subMenu: [
+            { id: 1, label: "About Us", link:"#" },
+            { id: 1, label: "Internship", link:"#" },
+            { id: 1, label: "Training", link:"#" },
         ]
     },
     {
         label: "Trainng",
         link: "/training",
+        subMenu: [
+            { id: 1, label: "Data Analytics", link:"#" },
+            { id: 2, label: "Data Science", link:"#" },
+            { id: 3, label: "WordPress", link:"#" },
+            { id: 4, label: "Product Design", link:"#" },
+            { id: 5, label: "Project Management", link:"#" },
+            { id: 6, label: "Product Management", link:"#" },
+            { id: 7, label: "Graphic Design", link:"#" },
+            { id: 8, label: "Motion Graphics / Video Editing", link:"#" },
+            { id: 9, label: "Software Development", link:"#" },
+            { id: 10, label: "Mobile App Development", link:"#" },
+            { id: 11, label: "Cyber Security", link:"#" },
+            { id: 12, label: "Digital Literacy", link:"#" },
+            { id: 13, label: "Digital Marketing", link:"#" },
+            { id: 14, label: "Business Development Management", link:"#" }
+        ]
     },
     {
         label: "Pentest",
@@ -54,9 +84,11 @@ export const navHeaders = [
     {
         label: "More",
         link: "/more",
-        children: [
-            
-        ]
+        subMenu: [
+            { id: 1, label: "Blog", link:"#" },
+            { id: 1, label: "Portfolio", link:"#" },
+            { id: 1, label: "Testmonial", link:"#" },
+        ],
     }
 ]
 
@@ -224,35 +256,47 @@ export const TestmonialBrandLogos = Object.keys(images).map((path) => ({
     },
 ]
 
-export const JvecServicesFooter = [
-    { id: 1, name: "Website Development" },
-    { id: 2, name: "Mobile App Development" },
-    { id: 3, name: "Software Development" },
-    { id: 4, name: "Digital Marketing" },
-    { id: 5, name: "Product Design" },
-    { id: 6, name: "Graphic Design" },
-    { id: 7, name: "Motion Design / Video Editing" },
-    { id: 8, name: "Consulting" },
-    { id: 9, name: "Corporate Training" },
-    { id: 10, name: "Data Consultancy" },
-    { id: 11, name: "Product Management" },
-    { id: 12, name: "Project Management" },
-    { id: 13, name: "Predictive Analysis" }
+export const JvecServicesLinks = [
+    { id: 1, name: "Website Development",  link:"#" },
+    { id: 2, name: "Mobile App Development",  link:"#" },
+    { id: 3, name: "Software Development",  link:"#" },
+    { id: 4, name: "Digital Marketing",  link:"#" },
+    { id: 5, name: "Product Design",  link:"#" },
+    { id: 6, name: "Graphic Design",  link:"#" },
+    { id: 7, name: "Motion Design / Video Editing",  link:"#" },
+    { id: 8, name: "Consulting",  link:"#" },
+    { id: 9, name: "Corporate Training",  link:"#" },
+    { id: 10, name: "Data Consultancy",  link:"#" },
+    { id: 11, name: "Product Management",  link:"#" },
+    { id: 12, name: "Project Management",  link:"#" },
+    { id: 13, name: "Predictive Analysis",  link:"#" }
   ]
 
-  export const JvecTrainingFooter = [
-    { id: 1, name: "Data Analytics" },
-    { id: 2, name: "Data Science" },
-    { id: 3, name: "WordPress" },
-    { id: 4, name: "Product Design" },
-    { id: 5, name: "Project Management" },
-    { id: 6, name: "Product Management" },
-    { id: 7, name: "Graphic Design" },
-    { id: 8, name: "Motion Graphics / Video Editing" },
-    { id: 9, name: "Software Development" },
-    { id: 10, name: "Mobile App Development" },
-    { id: 11, name: "Cyber Security" },
-    { id: 12, name: "Digital Literacy" },
-    { id: 13, name: "Digital Marketing" },
-    { id: 14, name: "Business Development Management" }
+  export const JvecTrainingLinks = [
+    { id: 1, name: "Data Analytics", link:"#" },
+    { id: 2, name: "Data Science", link:"#" },
+    { id: 3, name: "WordPress", link:"#" },
+    { id: 4, name: "Product Design", link:"#" },
+    { id: 5, name: "Project Management", link:"#" },
+    { id: 6, name: "Product Management", link:"#" },
+    { id: 7, name: "Graphic Design", link:"#" },
+    { id: 8, name: "Motion Graphics / Video Editing", link:"#" },
+    { id: 9, name: "Software Development", link:"#" },
+    { id: 10, name: "Mobile App Development", link:"#" },
+    { id: 11, name: "Cyber Security", link:"#" },
+    { id: 12, name: "Digital Literacy", link:"#" },
+    { id: 13, name: "Digital Marketing", link:"#" },
+    { id: 14, name: "Business Development Management", link:"#" }
+  ];
+
+  export const JvecAboutLinks = [
+    { id: 1, name: "About Us", link:"#" },
+    { id: 1, name: "Internship", link:"#" },
+    { id: 1, name: "Training", link:"#" },
+  ];
+
+  export const JvecMoreLinks = [
+    { id: 1, name: "Blog", link:"#" },
+    { id: 1, name: "Portfolio", link:"#" },
+    { id: 1, name: "Testmonial", link:"#" },
   ];

@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-/* <uniquifier>: Use a unique and descriptive class name
-<weight>: Use a value from 100 to 900 */
-
 .noto-sans {
   font-family: "Noto Sans", sans-serif;
   font-optical-sizing: auto;
@@ -51,32 +47,30 @@ body {
 }
 
 /* mobile */
-/* Hovered style */
 .mobile-nav-link {
   width: 100%;
   transition: all 0.3s ease-in-out;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 8px 16px;
 }
 
+/* Hovered style */
 .mobile-nav-link:hover {
   color: #062179;
+  background-color: gray;
 }
 
 /* Active state with ::after pseudo-element */
 .mobile-nav-link-active {
   width: 100%;
-  position: relative;
-}
-
-.mobile-nav-link-active::after {
-  content: '';
-  display: block;
-  background-color: #062179;
-  left: 0;
-  height: 2px;
-  width: 100%;
-  bottom: -0.7rem;
-  right: 0;
+  background-color: gray;
   transition: all 0.3s ease-in-out;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 8px 16px;
 }
 
 
@@ -149,4 +143,10 @@ body {
   text-decoration: underline;
   @apply text-sm;
   transition: color 0.2s ease-in-out;
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
 }

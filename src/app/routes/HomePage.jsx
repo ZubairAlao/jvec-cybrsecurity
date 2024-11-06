@@ -8,9 +8,9 @@ import ContactUs from '@/components/ContactUs'
 import PenetrationTestingInfo from '@/components/PenetrationTestingInfo'
 import JvecApproach from '@/components/JvecApproach'
 
-const Home = () => {
+const HomePage = () => {
   return (
-    <div>
+    <>
       <Head title='Leading Cybersecurity & ICT Services' description='JVEC Solutions offers expert-led cybersecurity and ICT solutions. Protect your business with our penetration testing services, compliance consulting, and custom technology solutions designed to elevate security and business resilience.'/>
       <Hero />
       <PenetrationTestingInfo />
@@ -19,8 +19,8 @@ const Home = () => {
       <JvecApproach />
       <ConsultationCTA />
       <ContactUs />
-    </div>
+    </>
   )
 } 
 
-export default Home
+export default HomePage

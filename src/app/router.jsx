@@ -1,26 +1,25 @@
 import { useMemo } from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Layout from '@/components/Layout';
+import HomePage from './routes/HomePage';
+import NotFound from './routes/NotFound';
+import ErrorPage from '../components/ErrorPage';
+
 
 export const createAppRouter = () => {
     return createBrowserRouter([
         {
             path: "/",
             element: <Layout />,
+            errorElement: <ErrorPage />,
             children: [
                 {
                     index: true,
-                    lazy: async () => {
-                        const { default: HomePage } = await import('./routes/HomePage');
-                        return { Component: HomePage };
-                    }
+                    element: <HomePage />
                 },
                 {
                     path: "*",
-                    lazy: async () => {
-                        const { default: NotFound } = await import('./routes/NotFound');
-                        return { Component: NotFound };
-                    }
+                    element: <NotFound />
                 }
             ]
         },
