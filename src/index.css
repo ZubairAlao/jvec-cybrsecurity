@@ -13,7 +13,7 @@
 body {
   background-color: #080808;
   color: #F5F5F5;
-  font-size: 14px;
+  @apply text-base lg:text-xl;
   font-family: "Noto Sans", sans-serif;
 }
 
@@ -27,6 +27,28 @@ body {
 
 .pages-vertical-padding {
   @apply py-[56px] md:py-[72px] lg:py-[150px];
+}
+
+/* Applies to the whole page */
+body {
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #1f1f1f #1a1a1a; /* Thumb color and Track color for Firefox */
+}
+
+/* Webkit-based browsers */
+body::-webkit-scrollbar {
+  width: 2px; /* Width of the scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #1a1a1a; /* Background of the track */
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #1f1f1f; /* Color of the thumb */
+  border-radius: 10px;
+  border: 2px solid #1a1a1a; /* Padding around the thumb */
 }
 
 
@@ -58,14 +80,14 @@ body {
 
 /* Hovered style */
 .mobile-nav-link:hover {
-  color: #062179;
-  background-color: gray;
+  color: #FFA000;
+  background-color: #1f1f1f8e;
 }
 
 /* Active state with ::after pseudo-element */
 .mobile-nav-link-active {
   width: 100%;
-  background-color: gray;
+  background-color: #1f1f1f8e;
   transition: all 0.3s ease-in-out;
   display: flex;
   gap: 8px;
@@ -81,24 +103,25 @@ body {
 }
 
 .desktop-nav-link:hover {
-  color: #062179;
+  color: #FFA000;
 }
 
 /* Active state with ::after pseudo-element */
 .desktop-nav-link-active {
   width: 100%;
-  color: #062179;
+  color: #4169e1;
   position: relative;
 }
 
 .desktop-nav-link-active::after {
   content: '';
   display: block;
-  background-color: #062179;
+  position: absolute;
+  background-color: #4169e1;
   left: 0;
-  height: 2px;
+  height: 1.5px;
   width: 100%;
-  bottom: -18px;
+  bottom: -6px;
   right: 0;
   transition: all 0.3s ease-in-out;
 }
@@ -119,6 +142,7 @@ body {
 
 .contact-input::placeholder {
   color: #ECF0FC80; 
+  
 }
 
 .contact-input:focus {

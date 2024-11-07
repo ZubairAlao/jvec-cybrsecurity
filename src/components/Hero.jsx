@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 const Hero = () => {
   return (
-    <section className='mt-[94px] min-h-[428px] lg:min-h-screen relative overflow-hidden flex items-center justify-center'>
+    <section className='mt-[81px] min-h-[428px] lg:min-h-screen relative overflow-hidden flex items-center justify-center'>
       <div className='max-w-[1117px]'>
         <div 
           className="absolute z-10 top-0 left-0

@@ -31,10 +31,10 @@ const MobileNav = ({ toggle, handleToggleButton }) => {
           className="object-contain md:hidden cursor-pointer z-30 relative"
           onClick={handleToggleButton}
         >
-          <img src={CancelClose} alt="menu" className='h-fit w-[30px]' />
+          <img src={CancelClose} alt="menu" className='h-fit w-[20px]' />
         </button>
       </div>
-      <ul>
+      <ul className='overflow-y-auto'>
         {navHeaders.map((link, index) => (
           <li 
             key={link.label}

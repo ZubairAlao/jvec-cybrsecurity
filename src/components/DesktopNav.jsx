@@ -31,14 +31,19 @@ const DesktopNav = () => {
           >
             {link.subMenu ? (
               <>
-                <span className="desktop-nav-link cursor-pointer flex items-center lg:text-base text-sm">
+                <NavLink to={link.link} 
+                  // className={`desktop-nav-link cursor-pointer flex items-center lg:text-base text-sm`}
+                  className={({ isActive }) =>
+                    isActive ? "desktop-nav-link-active flex items-center lg:text-base text-sm" : "desktop-nav-link flex items-center lg:text-base text-sm"
+                  }
+                >
                   {link.label}
                   {activeDropdown === index ? (
                     <ChevronUp className="ml-1" />
                   ) : (
                     <ChevronDown className="ml-1" />
                   )}
-                </span>
+                </NavLink>
                 {activeDropdown === index && (
                   <div 
                     className="absolute top-full mt-2"
@@ -50,7 +55,7 @@ const DesktopNav = () => {
                         <Link
                             key={submenu.label}
                             to={submenu.link}
-                            className="block max-w-[200px] py-1 lg:text-sm text-xs text-neutral-400 hover:text-neutral-50"
+                            className="block max-w-[170px] py-1 lg:text-sm text-xs text-neutral-400 hover:text-[#FFA000]"
                         >
                             {submenu.label}
                         </Link>

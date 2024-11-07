@@ -6,15 +6,15 @@ import WhyChooseJvec from './WhyChooseJvec'
 
 const PenetrationTestingInfo = () => {
   return (
-    <section className='min-h-screen pages-vertical-padding overflow-hidden'>
+    <section className='pages-vertical-padding overflow-hidden'>
         <div className='flex justify-center flex-col md:flex-row items-center gap-9 text-center md:text-left'>
             <div className='space-y-3 max-w-[602px] container'>
                 <h1 className='heading-font-sizes font-semibold'>What is Penetration Testing?</h1>
                 <div className='space-y-3'>
-                    <p className='text-lg'>
+                    <p>
                         Penetration testing, or ethical hacking, is a proactive security measure where authorized experts simulate real-world cyberattacks on an organization’s systems, mimicking the methods and behaviors of malicious attackers. These simulated attacks reveal vulnerabilities in your network, applications, and data protection, providing critical insights that help you fortify your defenses.
                     </p>
-                    <p className='text-lg'>
+                    <p>
                         With JVEC Solutions’ Penetration Testing Services, you gain the advantage of over <span className='font-bold'>20 years</span> of cybersecurity expertise, industry-leading strategies, and a commitment to security excellence.
                     </p>
                 </div>
