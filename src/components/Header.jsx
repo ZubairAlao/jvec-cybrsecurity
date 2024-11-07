@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { MenuIcon } from 'lucide-react';
-import { NavLink } from 'react-router-dom';
-import { navHeaders } from '@/constants';
 import Logo from './Logo';
 import MobileNav from './MobileNav';
+import DesktopNav from './DesktopNav';
 
 
 const Header = () => {
@@ -20,26 +19,7 @@ const Header = () => {
                     <Logo />
 
                     {/* Desktop Navigation */}
-                    <nav aria-label="Main Navigation" className="hidden md:flex justify-center items-center gap-4 text-base">
-                        <ul className="flex justify-center items-center space-x-[18px] lg:space-x-[38px] text-sm">
-                            {navHeaders.map((link) => (
-                                <li className='text-base'
-                                key={link.label}
-                                >
-                                    <NavLink
-                                        className={({ isActive }) =>
-                                            isActive
-                                              ? "desktop-nav-link-active"
-                                              : "desktop-nav-link"
-                                          }
-                                        to={link.link}
-                                    >
-                                        {link.label}
-                                    </NavLink>
-                                </li>
-                            ))}
-                        </ul>
-                    </nav>
+                    <DesktopNav />
 
                     {/* Mobile Navigation */}
                     <MobileNav toggle={toggle} handleToggleButton={handleToggleButton} />
@@ -47,8 +27,9 @@ const Header = () => {
                     <button
                         aria-label="Toggle navigation menu"
                         onClick={handleToggleButton}
+                        className='md:hidden'
                     >
-                        <MenuIcon className='h-fit w-[30px] md:hidden' />
+                        <MenuIcon className='h-fit w-[30px]' />
                     </button>
 
                     <button 

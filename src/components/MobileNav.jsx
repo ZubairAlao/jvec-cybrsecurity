@@ -3,7 +3,7 @@ import CancelClose from "@/assets/icons/close.svg";
 import { NavLink } from 'react-router-dom';
 import Logo from './Logo';
 import { navHeaders } from '@/constants';
-import DropdownLinks from './DropdownLinks';
+import MobileNavDropDown from './MobileNavDropDown';
 
 const MobileNav = ({ toggle, handleToggleButton }) => {
   const [activeDropdown, setActiveDropdown] = useState(null); // Track active dropdown
@@ -42,7 +42,7 @@ const MobileNav = ({ toggle, handleToggleButton }) => {
             style={{ animationDelay: `${index * 0.1}s` }}
           >
             {link.subMenu ? (
-              <DropdownLinks
+              <MobileNavDropDown
                 subMenuLinks={link.subMenu}
                 link={link}
                 isOpen={activeDropdown === link.label}

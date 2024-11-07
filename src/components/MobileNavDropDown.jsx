@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 import { Link } from "react-router-dom";
 
 
-export function DropdownLinks({ subMenuLinks, link, isOpen, onToggle, handleToggleButton }) {
+export function MobileNavDropDown({ subMenuLinks, link, isOpen, onToggle, handleToggleButton }) {
   return (
     <div>
       <div
@@ -36,4 +36,4 @@ export function DropdownLinks({ subMenuLinks, link, isOpen, onToggle, handleTogg
   );
 }
 
-export default DropdownLinks;
+export default MobileNavDropDown;
