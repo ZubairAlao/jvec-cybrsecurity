@@ -20,18 +20,18 @@ const DesktopNav = () => {
   };
 
   return (
-    <nav aria-label="Main Navigation" className="hidden md:flex justify-center items-center gap-4 text-base">
-      <ul className="flex justify-center items-center space-x-[12px] lg:space-x-[20px] text-sm relative">
+    <nav aria-label="Main Navigation" className="hidden md:flex justify-center items-center gap-4">
+      <ul className="flex justify-center items-center space-x-[12px] lg:space-x-[20px] relative">
         {navHeaders.map((link, index) => (
           <li
             key={link.label}
-            className="text-base relative"
+            className="lg:text-base text-sm relative"
             onMouseEnter={() => handleMouseEnter(index)}
             onMouseLeave={handleMouseLeave}
           >
             {link.subMenu ? (
               <>
-                <span className="desktop-nav-link cursor-pointer flex items-center">
+                <span className="desktop-nav-link cursor-pointer flex items-center lg:text-base text-sm">
                   {link.label}
                   {activeDropdown === index ? (
                     <ChevronUp className="ml-1" />
@@ -41,19 +41,21 @@ const DesktopNav = () => {
                 </span>
                 {activeDropdown === index && (
                   <div 
-                    className="absolute top-full mt-2 w-[400px] rounded-lg border border-neutral-600 bg-[#000] p-4 grid grid-cols-2 gap-2"
+                    className="absolute top-full mt-2"
                     onMouseEnter={() => handleMouseEnter(index)} // Keep dropdown open when hovering inside
                     onMouseLeave={handleMouseLeave} // Delayed close on leaving
                   >
-                    {link.subMenu.map((submenu) => (
-                      <Link
-                        key={submenu.label}
-                        to={submenu.link}
-                        className="block py-1 text-sm text-neutral-400 hover:text-neutral-50"
-                      >
-                        {submenu.label}
-                      </Link>
-                    ))}
+                    <div className="min-w-max max-h-[400px] inline-flex flex-col flex-wrap gap-2 bg-[#080808] rounded-lg border border-neutral-600 p-4">
+                        {link.subMenu.map((submenu) => (
+                        <Link
+                            key={submenu.label}
+                            to={submenu.link}
+                            className="block max-w-[200px] py-1 lg:text-sm text-xs text-neutral-400 hover:text-neutral-50"
+                        >
+                            {submenu.label}
+                        </Link>
+                        ))}
+                    </div>
                   </div>
                 )}
               </>
