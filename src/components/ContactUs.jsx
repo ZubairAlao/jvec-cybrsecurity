@@ -7,9 +7,9 @@ const ContactUs = () => {
   return (
     <section className='pb-[56px] md:pb-[72px] lg:pb-[150px]'>
         <div className="container flex items-center flex-col md:flex-row justify-between">
-            <div className='lg:max-w-[406px] md:max-w-[300px] space-y-4 md:space-y-7 mb-[56px]'>
+            <div className='lg:max-w-[406px] md:max-w-[320px] space-y-4 md:space-y-7 mb-[56px]'>
                 <h3>READY TO GET STARTED</h3>
-                <p className='font-semibold heading-font-sizes'>Send us an Email</p>
+                <p className='font-semibold text-2xl md:text-3xl lg:text-4xl'>Send us an Email</p>
                 <div className='space-y-4 md:space-y-7'>
                     <p>Join numerous corporations, organizations and businesses as they scale their teams, tap into new market opportunities and build innovative products with Jvec solutions.
                     </p>

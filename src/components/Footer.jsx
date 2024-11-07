@@ -11,7 +11,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
     <footer className='relative pb-20 pt-20 bg-[#0e0e0e]'>
-        <div className="container space-y-[56px] flex flex-col items-start justify-between lg:flex-row">
+        <div className="container space-y-[56px] md:space-y-0 flex flex-col md:flex-row items-start justify-between">
           {/* logo and social icons */}
           <div className="space-y-4">
             <Logo />
@@ -66,8 +66,8 @@ const Footer = () => {
                 </div>
             </div>
           </div>
-          <p className="text-center mx-auto">©{currentYear} JVEC Solutions.All right reserved.</p>
         </div>
+          <p className="text-center mx-auto mt-7">©{currentYear} JVEC Solutions.All right reserved.</p>
     </footer>
   )
 }

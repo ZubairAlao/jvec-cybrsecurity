@@ -11,9 +11,8 @@ const WhyChooseJvec = () => {
           {WhyChooseJvecListOne.map((reason, index) => (
             <div className='text-lg' key={reason.title}>
               {index === 0 ? (
-                <div className='flex gap-1 flex-1 text-2xl md:text-3xl lg:text-5xl'>
-                  <h3>{reason.title}</h3>
-                  <h3>{reason.text}</h3>
+                <div className='flex flex-1 justify-center text-2xl md:text-3xl lg:text-5xl'>
+                  <h3><span className='mr-1'>1.</span>{reason.text}</h3>
                 </div>
               ) : (
                 <div className='bg-gradient-to-b flex-1 from-[#514D4D] to-[#080808] p-4 space-y-4 lg:space-y-7'>

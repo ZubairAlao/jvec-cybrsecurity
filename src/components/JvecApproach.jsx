@@ -7,11 +7,11 @@ import LargePenetrationTestingImg from "@/assets/images/home/large-penetration-t
 
 const JvecApproach = () => {
   return (
-    <section className=''>
+    <section className='md:pt-12'>
         <div className='overflow-hidden'>
-            <h1 className='heading-font-sizes font-semibold container mb-4 text-center'>The JVEC Approach to Penetration Testing</h1>
+            <h1 className='heading-font-sizes font-semibold container mb-4 md:mb-12 text-center'>The JVEC Approach to Penetration Testing</h1>
 
-            <div className='md:flex justify-start gap-8 md:container mb-[56px]'>
+            <div className='md:flex justify-start gap-8 mb-[56px]'>
               <div className='space-y-[56px] lg:space-y-[74px] container'>
                 <p className=''>
                     As a trusted leader in penetration testing, JVEC Solutions combines decades of cybersecurity expertise with a client-centric, consultative approach to deliver unparalleled security assessments. Our commitment to proactive, customized penetration testing ensures your organization is safeguarded against evolving cyber threats while minimizing business disruption.
@@ -23,16 +23,16 @@ const JvecApproach = () => {
                     <source srcSet={SmallPenetrationTestingImg} media="(max-width: 767x)" />
                     <source srcSet={MediumPenetrationTestingImg} media="(min-width: 768px) and (max-width: 1023px)" />
                     <source srcSet={LargePenetrationTestingImg} media="(min-width: 1024px)" />
-                    <img src={SmallPenetrationTestingImg} alt="Testing Image" className='h-full w-full object-cover md:rounded-md' />
+                    <img src={SmallPenetrationTestingImg} alt="Testing Image" className='h-full w-full object-cover md:rounded-md' loading="lazy" />
                 </picture>
               </div>
             </div>
 
             <h3 className='heading-font-sizes text-center mt-[72px] font-semibold container'>They Trust Us, and so can You</h3>
 
-            <div className='grid justify-center h-fit grid-cols-2 md:grid-cols-4  gap-8 lg:gap-32 bg-gradient-to-r from-[#1e1c1c] via-[#222222] to-[#080808] p-8 mt-[32px] '>
+            <div className='grid justify-center h-fit grid-cols-2 md:grid-cols-4 gap-8 lg:gap-32 bg-gradient-to-r from-[#1e1c1c] via-[#222222] to-[#080808] p-8 mt-[32px] '>
               {TestmonialBrandLogos.map((brand, index) => (
-                <img key={index} src={brand.image} alt={brand.alt} className="w-full h-[40px] lg:h-[80px]" />
+                <img key={index} src={brand.image} alt={brand.alt} className="w-full h-[40px] md:h-[61px] lg:h-[80px]" loading="lazy" />
               ))}
             </div>
         </div>

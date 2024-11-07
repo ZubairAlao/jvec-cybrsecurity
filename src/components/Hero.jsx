@@ -1,24 +1,52 @@
-import React from 'react'
+import React, { useState, useEffect, useRef } from 'react';
 import Button from './ui/button/button';
-import HeroBg from "@/assets/images/hero-bg.png"
+import HeroBg from "@/assets/images/hero-bg.webp";
 import { motion } from 'framer-motion';
 
 const Hero = () => {
+  const [isInView, setIsInView] = useState(false);
+  const heroRef = useRef(null);
+
+  useEffect(() => {
+    // Create an IntersectionObserver
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsInView(true);
+          observer.unobserve(entry.target);
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    // Start observing the element
+    if (heroRef.current) {
+      observer.observe(heroRef.current);
+    }
+
+  
+    return () => {
+      if (heroRef.current) observer.unobserve(heroRef.current);
+    };
+  }, []);
+
   return (
-    <section className='mt-[81px] min-h-[428px] lg:min-h-screen relative overflow-hidden flex items-center justify-center'>
+    <section 
+      ref={heroRef}
+      className='mt-[81px] min-h-[428px] lg:min-h-screen relative overflow-hidden flex items-center justify-center'
+    >
       <div className='max-w-[1117px]'>
         <div 
-          className="absolute z-10 top-0 left-0
-            w-full h-full
-            bg-cover bg-center"
-          style={{ backgroundImage: `url(${HeroBg})`,
+          className="absolute z-10 top-0 left-0 w-full h-full bg-cover bg-center"
+          style={{
+            backgroundImage: isInView ? `url(${HeroBg})` : 'none',
             backgroundPosition: 'top center',
             backgroundSize: 'cover',
-            backgroundRepeat: 'no-repeat' }}
+            backgroundRepeat: 'no-repeat',
+          }}
         ></div>
       
-        <div 
-          className='space-y-[56px] md:space-y-9 text-center container relative z-20 w-full'>
+        <div className='space-y-[56px] md:space-y-9 text-center container relative z-20 w-full'>
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
@@ -53,11 +81,11 @@ const Hero = () => {
           </motion.div>
         </div>
 
-        <div className='absolute top-0 left-0 z-10 h-full bg-opacity-90 bg-[#000000] w-full'>
+        <div className='absolute top-0 left-0 z-10 h-full bg-opacity-85 bg-[#000000] w-full'>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
