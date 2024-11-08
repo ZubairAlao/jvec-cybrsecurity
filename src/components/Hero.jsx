@@ -35,8 +35,8 @@ const Hero = () => {
       ref={heroRef}
       className='mt-[81px] min-h-[428px] lg:min-h-screen relative overflow-hidden flex items-center justify-center'
     >
-      <div className='max-w-[1117px]'>
-        <div 
+      <div className=''>
+        <div
           className="absolute z-10 top-0 left-0 w-full h-full bg-cover bg-center"
           style={{
             backgroundImage: isInView ? `url(${HeroBg})` : 'none',
@@ -46,7 +46,7 @@ const Hero = () => {
           }}
         ></div>
       
-        <div className='space-y-[56px] md:space-y-9 text-center container relative z-20 w-full'>
+        <div className='space-y-[56px] md:space-y-9 text-center container relative z-20'>
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
@@ -57,7 +57,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.3 }}
-              className="font-bold text-3xl lg:text-7xl mb-2"
+              className="font-bold text-3xl md:text-6xl lg:text-7xl mb-2"
             >
               Protect Your Business with Expert-Led Penetration Testing.
             </motion.h1>
@@ -66,7 +66,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.6 }}
-              className="text-base md:text-2xl lg:text-3xl max-w-[95%]"
+              className="text-base md:text-2xl lg:text-3xl"
             >
               Elevating your Business through cutting-edge ICT solutions
             </motion.p>

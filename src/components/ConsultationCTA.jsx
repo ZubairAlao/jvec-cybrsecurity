@@ -9,7 +9,7 @@ const ConsultationCTA = () => {
         <div className='flex md:flex-row-reverse flex-col justify-center lg:gap-32 gap-10'>
             <div className='container space-y-10 text-center md:text-right'>
                 <h1 className='heading-font-sizes font-semibold'><span className="md:leading-[70px]">Take Action with JVEC Solutions’ Penetration Testing Services</span></h1>
-                <p className="leading-8">Defend your organization with cybersecurity solutions forged by 45 years of expertise. With JVEC Solutions, you’re not just identifying risks; you’re building a proactive, resilient defense against the evolving cyber threat landscape</p>
+                <p>Defend your organization with cybersecurity solutions forged by 45 years of expertise. With JVEC Solutions, you’re not just identifying risks; you’re building a proactive, resilient defense against the evolving cyber threat landscape</p>
             </div>
             <div className='w-full md:h-[494px]  md:-ml-32'>
                 <picture>
@@ -26,8 +26,8 @@ const ConsultationCTA = () => {
                 <div className='bg-[#111111] w-full flex justify-center items-center py-12 px-6'>
                     <div className='bg-[#282828] w-full flex flex-col justify-center items-center'>
                         <div className='text-center space-y-4 flex flex-col justify-center items-center p-6'>
-                            <h3 className='text-2xl md:text-4xl lg:text-5xl font-semibold md:leading-[60px]'>Ready to Fortify Your Security? Schedule Your Free Consultation</h3>
-                            <p className="text-base lg:text-lg">Let JVEC Solutions give you the peace of mind that comes with world-class cybersecurity.</p>
+                            <h2 className='text-2xl md:text-4xl lg:text-5xl font-semibold md:leading-[60px]'>Ready to Fortify Your Security? Schedule Your Free Consultation</h2>
+                            <p>Let JVEC Solutions give you the peace of mind that comes with world-class cybersecurity.</p>
                             <Button children={"Get a Free Consultation"} />
                         </div>
                     </div>

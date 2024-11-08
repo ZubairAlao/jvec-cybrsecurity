@@ -48,7 +48,7 @@ const Footer = () => {
           </div>
 
           {/* about and contact us */}
-          <div className="flex gap-12 w-full">
+          <div className="flex justify-between w-full">
             <div className="flex flex-col gap-12">
               <div className="space-y-5">
                 <h3 className="text-lg">ABOUT</h3>
@@ -69,11 +69,11 @@ const Footer = () => {
               </div>
             </div>
             
-            <div className="space-y-5">
+            <div className="space-y-5 max-w-[47%]">
               <h3 className="text-lg">CONTACT US</h3>
                 <div className="text-xs flex flex-col gap-4">
                 {contactInfo.map((contact) => (
-                  <div className="flex gap-2">
+                  <div className="flex gap-2" key={contact.label}>
                     <img src={contact.image} alt={contact.label} />
                     <p>{contact.label}</p>
                   </div>
@@ -88,12 +88,3 @@ const Footer = () => {
 }
 
 export default Footer
-
-{/* <div className='space-y-6'>
-                  {goldenContactInfo.map((info) => (
-                      <div key={info.label} className='flex items-center justify-center flex-col md:flex-row md:justify-start gap-2'>
-                          <img src={info.image} alt={info.label} />
-                          <p>{info.label}</p>
-                      </div>
-                  ))}
-                </div> */}

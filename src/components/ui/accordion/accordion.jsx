@@ -29,7 +29,7 @@ const Accordion = ({ accordionData }) => {
             className={`transition-all duration-300 ease-in-out overflow-hidden
               ${activeIndex === index ? 'max-h-[200px] opacity-100' : 'max-h-0 opacity-0'}`}
           >
-            <p className="text-sm pt-2 text-white">{item.text}</p>
+            <p className="text-sm pt-2 text-white leading-relaxed">{item.text}</p>
           </div>
         </div>
       ))}

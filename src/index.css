@@ -13,12 +13,12 @@
 body {
   background-color: #080808;
   color: #F5F5F5;
-  @apply text-base lg:text-lg;
+  @apply text-base lg:text-lg leading-relaxed;
   font-family: "Noto Sans", sans-serif;
 }
 
 .heading-font-sizes {
-  @apply text-3xl md:text-5xl lg:text-6xl;
+  @apply text-[1.875rem] md:text-[3rem] lg:text-[3.75rem] leading-[1.2];
 }
 
 .pages-vertical-padding {

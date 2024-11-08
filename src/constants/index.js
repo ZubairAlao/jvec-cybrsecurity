@@ -17,8 +17,6 @@ import SSAE16Icon from "@/assets/icons/compliance-certifications/ssae16-type-ii.
 import IAASBIcon from "@/assets/icons/compliance-certifications/iaasb.svg"
 import ISAE304Icon from "@/assets/icons/compliance-certifications/isae-304.svg"
 
-const images = import.meta.glob('@/assets/icons/testmonial-brands/*.svg', { eager: true });
-
 import FacebookIcon from "@/assets/icons/social-logos/facebook.svg"
 import TwitterIcon from "@/assets/icons/social-logos/twitter.svg"
 import LinkedInIcon from "@/assets/icons/social-logos/linkedin.svg"
@@ -122,8 +120,8 @@ export const WhyChooseJvecListTwo = [
         text: "Our Cyber Executive team brings over 44 years of combined experience across key industries, including Financial Services, Information Technology, and Healthcare, with a global footprint spanning Africa, North America, Europe, and the Middle East"
     },
     {
-        title: "2. Our Core Values:",
-        text: "Trusted Expertise and Client Commitment"
+        title: "2.",
+        text: "Our Core Values: Trusted Expertise and Client Commitment"
     },
     {
         title: "Tailored, Client-Centric Approach",
@@ -233,8 +231,10 @@ export const JvecApproachPenetrationAccordion = [
     },
 ]
 
-export const TestmonialBrandLogos = Object.keys(images).map((path) => ({
-    image: images[path].default || images[path],  // Use `.default` if you are using SVGs or other assets needing it
+const tesmonialbrands = import.meta.glob('@/assets/icons/testmonial-brands/*.svg', { eager: true });
+
+export const TestmonialBrandLogos = Object.keys(tesmonialbrands).map((path) => ({
+    image: tesmonialbrands[path].default || tesmonialbrands[path],  // Use `.default` if you are using SVGs or other assets needing it
     alt: path.split('/').pop().replace(/.svg$/, ''),  // Generate alt text from filename (optional)
   }));
 

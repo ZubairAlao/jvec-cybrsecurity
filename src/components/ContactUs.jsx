@@ -40,7 +40,7 @@ const ContactUs = () => {
 
                 <div>
                     <label htmlFor="message">MESSAGE</label>
-                    <textarea id="message" className="contact-input min-h-[120px] lg:min-h-[176px]" placeholder="Type in your message" autoComplete="off" /> 
+                    <textarea id="message" className="contact-input min-h-[180px] lg:min-h-[176px]" placeholder="Type in your message" autoComplete="off" /> 
                 </div>
 
                 <Button children="Send Message" />
