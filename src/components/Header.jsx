@@ -68,7 +68,7 @@ const Header = () => {
                     <DesktopNav />
 
                     {/* Mobile Navigation */}
-                    <div ref={menuRef}>
+                    <div ref={menuRef} className='md:hidden'>
                         <MobileNav toggle={toggle} handleToggleButton={handleToggleButton} />
                     </div>
 
@@ -81,11 +81,11 @@ const Header = () => {
                     </button>
 
                     <button 
-                        className="text-[#ffffff] py-1 px-8 text-sm hidden md:block
+                        className="text-[#ffffff] py-4 px-11 text-sm hidden md:block
                         transition-all duration-300 ease-in-out
                         hover:shadow-lg hover:scale-100
                         active:translate-y-[2px] active:shadow-none cursor-pointer
-                        bg-gradient-to-b from-[#4168E2] via-[#4168E2] to-[#FFAB20] rounded-md"
+                        btn-grad rounded-md"
                     >
                         CONTACT US
                     </button>

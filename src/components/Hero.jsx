@@ -57,7 +57,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.3 }}
-              className="font-bold text-[2rem] leading-normal lg:text-7xl mb-2"
+              className="font-bold text-3xl lg:text-7xl mb-2"
             >
               Protect Your Business with Expert-Led Penetration Testing.
             </motion.h1>
@@ -66,7 +66,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.6 }}
-              className="text-base md:text-2xl lg:text-3xl"
+              className="text-base md:text-2xl lg:text-3xl max-w-[95%]"
             >
               Elevating your Business through cutting-edge ICT solutions
             </motion.p>

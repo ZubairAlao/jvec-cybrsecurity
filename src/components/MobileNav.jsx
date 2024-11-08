@@ -22,7 +22,7 @@ const MobileNav = ({ toggle, handleToggleButton }) => {
       aria-label="Mobile Navigation"
       className={`${
         toggle ? "translate-x-0 opacity-100" : "translate-x-full opacity-50"
-      } flex flex-col md:hidden bg-[#080808] absolute top-0 right-0 p-6 h-screen transition-all duration-500 ease-in-out transform w-[70%]`}
+      } flex flex-col md:hidden bg-[#080808] absolute top-0 right-0 p-6 h-screen transition-all duration-500 ease-in-out transform w-[90%] z-30`}
     >
       <div className='flex justify-between items-center mb-10'>
         <Logo />
@@ -68,11 +68,11 @@ const MobileNav = ({ toggle, handleToggleButton }) => {
         style={{ animationDelay: `${navHeaders.length * 0.1}s` }}
       >
         <button
-          className="text-[#ffffff] py-1 px-4 text-sm md:hidden w-full
+          className="text-[#ffffff] btn-grad py-4 px-11 text-sm md:hidden w-full
             transition-all duration-300 ease-in-out
             hover:shadow-lg hover:scale-100
             active:translate-y-[2px] active:shadow-none cursor-pointer
-            bg-gradient-to-b from-[#4168E2] via-[#4168E2] to-[#FFAB20] rounded-md"
+            rounded-md"
           onClick={handleToggleButton}
         >
           CONTACT US

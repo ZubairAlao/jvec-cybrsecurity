@@ -24,6 +24,11 @@ import TwitterIcon from "@/assets/icons/social-logos/twitter.svg"
 import LinkedInIcon from "@/assets/icons/social-logos/linkedin.svg"
 import InstagramIcon from "@/assets/icons/social-logos/instagram.svg"
 
+import PhoneIcon from "@/assets/icons/contact-icons/phonecall.svg"
+import LocationIcon from "@/assets/icons/contact-icons/location.svg"
+import EmailIcon from "@/assets/icons/contact-icons/email.svg"
+import WhatsappIcon from "@/assets/icons/contact-icons/whatsapp.svg"
+
 export const navHeaders = [
     {
         label: "Home",
@@ -300,3 +305,22 @@ export const JvecServicesLinks = [
     { id: 1, label: "Portfolio", link:"#" },
     { id: 1, label: "Testmonial", link:"#" },
   ];
+
+  export const contactInfo = [
+    {
+        image: PhoneIcon,
+        label:"+234-0814-097-9054"
+    },
+    {
+        image: EmailIcon,
+        label:"hello@jvecsolutions.com"
+    },
+    {
+        image: WhatsappIcon,
+        label:"+234-0708-093-9897"
+    },
+    {
+        image: LocationIcon,
+        label:"12 Rev. Ogunbiyi Street,Off Oba Akinjobi, Ikeja GRA Lagos, Nigeria."
+    },
+]

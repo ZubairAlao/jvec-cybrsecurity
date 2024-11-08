@@ -24,7 +24,7 @@ export function MobileNavDropDown({ subMenuLinks, link, isOpen, onToggle, handle
       {isOpen && (
         <div className={cn("min-w-[8rem] rounded-md")}>
           {subMenuLinks.map((subLink) => (
-            <div key={subLink.label} className="px-5 py-1 text-xs">
+            <div key={subLink.label} className="px-5 py-1 text-sm">
               <Link to={subLink.link} onClick={() => {
                 onToggle();
                 handleToggleButton();
