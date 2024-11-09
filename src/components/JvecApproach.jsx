@@ -7,9 +7,9 @@ import LargePenetrationTestingImg from "@/assets/images/home/large-penetration-t
 
 const JvecApproach = () => {
   return (
-    <section className='md:pt-12'>
-        <div className='overflow-hidden'>
-            <h1 className='heading-font-sizes font-semibold container mb-[40px] md:mb-12 text-center md:text-left'>The JVEC Approach to Penetration Testing</h1>
+    <section>
+        <div className='overflow-hidden lg:container'>
+            <h1 className='heading-font-sizes font-semibold container mb-[40px] md:mb-12 text-center md:text-left lg:max-w-[700px] ml-0'>The JVEC Approach to Penetration Testing</h1>
 
             <div className='md:flex justify-start gap-8 mb-[56px]'>
               <div className='space-y-[24px] lg:space-y-[74px] container'>
@@ -28,11 +28,11 @@ const JvecApproach = () => {
               </div>
             </div>
 
-            <h3 className='heading-font-sizes text-center my-[40px] font-semibold container'>They Trust Us, and so can You</h3>
+            <h3 className='heading-font-sizes text-center my-[40px] md:my-[60px] font-semibold container'>They Trust Us, and so can You</h3>
 
-            <div className='grid justify-center h-fit grid-cols-2 md:grid-cols-4 gap-8 lg:gap-32 bg-gradient-to-r from-[#1e1c1c] via-[#222222] to-[#080808] p-8'>
+            <div className='grid justify-center h-fit  grid-cols-2 md:grid-cols-4 gap-8 bg-gradient-to-r from-[#1e1c1c] via-[#222222] to-[#080808] p-8'>
               {TestmonialBrandLogos.map((brand, index) => (
-                <img key={index} src={brand.image} alt={brand.alt} className="w-full h-[46px] md:h-[61px] lg:h-[80px]" loading="lazy" />
+                <img key={index} src={brand.image} alt={brand.alt} className="w-full h-[60px] md:h-[79px] lg:h-[79px]" loading="lazy" />
               ))}
             </div>
         </div>

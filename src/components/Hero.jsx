@@ -46,7 +46,7 @@ const Hero = () => {
           }}
         ></div>
       
-        <div className='space-y-[56px] md:space-y-9 text-center container relative z-20'>
+        <div className='space-y-[56px] md:space-y-9 text-center container relative z-20 max-w-[1100px]'>
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}

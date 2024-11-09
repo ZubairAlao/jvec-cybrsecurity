@@ -18,11 +18,11 @@ body {
 }
 
 .heading-font-sizes {
-  @apply text-[1.875rem] md:text-[3rem] lg:text-[3.75rem] leading-[1.2];
+  @apply text-[1.875rem] md:text-[3rem] lg:text-[3.5rem] leading-[1.2];
 }
 
 .pages-vertical-padding {
-  @apply py-[56px] md:py-[72px] lg:py-[150px];
+  @apply py-[56px] md:py-[90px] lg:py-[150px];
 }
 
 /* Applies to the whole page */

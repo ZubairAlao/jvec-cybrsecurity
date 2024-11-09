@@ -3,7 +3,7 @@ import { WhyChooseJvecListOne, WhyChooseJvecListTwo } from '../constants';
 
 const WhyChooseJvec = () => {
   return (
-    <div className='mt-[56px] md:mt[72px] lg:mt-[150px]'>
+    <div className='mt-[56px] md:mt[90px] lg:mt-[150px]'>
       <div className='container'>
         <h1 className='heading-font-sizes font-semibold text-center md:max-w-[660px] mx-auto lg:max-w-[964px]'>
           Why Choose JVEC Solutions for Penetration Testing?
@@ -18,8 +18,8 @@ const WhyChooseJvec = () => {
                 </div>
               ) : (
                 <div className='bg-gradient-to-b flex-1 from-[#514D4D] to-[#080808] p-4 space-y-4 lg:space-y-7'>
-                  <h2 className='text-sm font-semibold'>{reason.title}</h2>
-                  <p className='text-sm leading-relaxed'>{reason.text}</p>
+                  <h2 className='text-sm md:text-base font-semibold'>{reason.title}</h2>
+                  <p className='text-sm md:text-base leading-relaxed'>{reason.text}</p>
                 </div>
               )}
             </div>
@@ -38,8 +38,8 @@ const WhyChooseJvec = () => {
                 </div>
               ) : (
                 <div className='bg-gradient-to-b flex-1 from-[#514D4D] to-[#080808] p-4 space-y-4 lg:space-y-7'>
-                  <h2 className='text-sm font-semibold'>{reason.title}</h2>
-                  <p className='text-sm leading-relaxed'>{reason.text}</p>
+                  <h2 className='text-sm md:text-base font-semibold'>{reason.title}</h2>
+                  <p className='text-sm md:text-base leading-relaxed'>{reason.text}</p>
                 </div>
               )}
             </div>
