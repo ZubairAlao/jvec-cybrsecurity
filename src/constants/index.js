@@ -17,6 +17,22 @@ import SSAE16Icon from "@/assets/icons/compliance-certifications/ssae16-type-ii.
 import IAASBIcon from "@/assets/icons/compliance-certifications/iaasb.svg"
 import ISAE304Icon from "@/assets/icons/compliance-certifications/isae-304.svg"
 
+import CareerVerified from "@/assets/icons/testmonial-brands/career-verified.svg";
+import Curacel from "@/assets/icons/testmonial-brands/curacel.svg";
+import GoldlandInteriorFurniture from "@/assets/icons/testmonial-brands/goldland-interior-furniture.svg";
+import Mes from "@/assets/icons/testmonial-brands/mes.svg";
+import Oak from "@/assets/icons/testmonial-brands/oak.svg";
+import OvisionOne from "@/assets/icons/testmonial-brands/ovision-one.svg";
+import ParoFoundation from "@/assets/icons/testmonial-brands/paro-foundation.svg";
+import PentAgency from "@/assets/icons/testmonial-brands/pent-agency.svg";
+import ScentArtPrint from "@/assets/icons/testmonial-brands/scent-art-print.svg";
+import SdOnaiwiNigeria from "@/assets/icons/testmonial-brands/sd-onaiwi-nigeria.svg";
+import StresslessMovers from "@/assets/icons/testmonial-brands/stressless-movers.svg";
+import UchennaNnaji from "@/assets/icons/testmonial-brands/uchenna-nnaji.svg";
+
+
+
+
 import FacebookIcon from "@/assets/icons/social-logos/facebook.svg"
 import TwitterIcon from "@/assets/icons/social-logos/twitter.svg"
 import LinkedInIcon from "@/assets/icons/social-logos/linkedin.svg"
@@ -240,12 +256,65 @@ export const JvecApproachPenetrationAccordion = [
     },
 ]
 
-const tesmonialbrands = import.meta.glob('@/assets/icons/testmonial-brands/*.svg', { eager: true });
+export const TestmonialBrandLogos = [
+    {
+      image: CareerVerified,
+      alt: "Career Verified"
+    },
+    {
+      image: Curacel,
+      alt: "Curacel"
+    },
+    {
+      image: GoldlandInteriorFurniture,
+      alt: "Goldland Interior Furniture"
+    },
+    {
+      image: Mes,
+      alt: "MES"
+    },
+    {
+      image: ParoFoundation,
+      alt: "Paro Foundation"
+    },
+    {
+      image: Oak,
+      alt: "OAK"
+    },
+    {
+      image: OvisionOne,
+      alt: "Ovision One"
+    },
+    {
+      image: PentAgency,
+      alt: "Pent Agency"
+    },
+    {
+      image: ScentArtPrint,
+      alt: "Scent Art Print"
+    },
+    {
+      image: SdOnaiwiNigeria,
+      alt: "SD Onaiwi Nigeria"
+    },
+    {
+      image: StresslessMovers,
+      alt: "Stressless Movers"
+    },
+    {
+      image: UchennaNnaji,
+      alt: "Uchenna Nnaji"
+    }
+  ];
+  
+//   this is fast way of mapping loading all images without writing names for each file names
+// not useful because swipper want me duplicate files
+// const tesmonialbrands = import.meta.glob('@/assets/icons/testmonial-brands/*.svg', { eager: true });
 
-export const TestmonialBrandLogos = Object.keys(tesmonialbrands).map((path) => ({
-    image: tesmonialbrands[path].default || tesmonialbrands[path],  // Use `.default` if you are using SVGs or other assets needing it
-    alt: path.split('/').pop().replace(/.svg$/, ''),  // Generate alt text from filename (optional)
-  }));
+// export const TestmonialBrandLogos = Object.keys(tesmonialbrands).map((path) => ({
+//     image: tesmonialbrands[path].default || tesmonialbrands[path],  // Use `.default` if you are using SVGs or other assets needing it
+//     alt: path.split('/').pop().replace(/.svg$/, ''),  // Generate alt text from filename (optional)
+//   }));
 
   export const SocialIcons = [
     {
