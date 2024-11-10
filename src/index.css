@@ -22,7 +22,7 @@ body {
 }
 
 .pages-vertical-padding {
-  @apply py-[56px] md:py-[90px] lg:py-[150px];
+  @apply py-[56px] md:py-[80px] lg:py-[120px];
 }
 
 /* Applies to the whole page */
@@ -143,9 +143,8 @@ body::-webkit-scrollbar-thumb {
 .btn-grad {background-image: linear-gradient(to bottom, #4168E2 0%, #4168E2  51%, #FFAB20  140%)}
 
 .btn-grad:hover {
-  background-position: right center; /* change the direction of the change here */
-  color: #fff;
-  text-decoration: none;
+  background-image: linear-gradient(to bottom, #4168E2 0%, #4168E2 51%, #FFAB20 140%);
+  background-size: 200% 200%;
 }
 
 .contact-input:focus {

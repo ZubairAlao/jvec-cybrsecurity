@@ -22,13 +22,13 @@ const MobileNav = ({ toggle, handleToggleButton }) => {
       aria-label="Mobile Navigation"
       className={`${
         toggle ? "translate-x-0 opacity-100" : "translate-x-full opacity-50"
-      } flex flex-col md:hidden bg-[#080808] absolute top-0 right-0 p-6 h-screen transition-all duration-500 ease-in-out transform w-[90%] z-30`}
+      } flex flex-col lg:hidden bg-[#080808] absolute top-0 right-0 p-6 h-screen transition-all duration-500 ease-in-out transform w-[70%] z-30`}
     >
       <div className='flex justify-between items-center mb-10'>
         <Logo />
         <button
           aria-label="Toggle navigation menu"
-          className="object-contain md:hidden cursor-pointer z-30 relative"
+          className="object-contain cursor-pointer z-30 relative"
           onClick={handleToggleButton}
         >
           <img src={CancelClose} alt="menu" className='h-fit w-[20px]' />
@@ -68,9 +68,8 @@ const MobileNav = ({ toggle, handleToggleButton }) => {
         style={{ animationDelay: `${navHeaders.length * 0.1}s` }}
       >
         <button
-          className="text-[#ffffff] btn-grad lg:px-11 lg:py-4 px-6 py-2 text-sm md:hidden w-full
+          className="text-[#ffffff] btn-grad lg:px-11 lg:py-4 px-6 py-2 text-sm w-full
             transition-all duration-300 ease-in-out
-            hover:shadow-lg hover:scale-100
             active:translate-y-[2px] active:shadow-none cursor-pointer
             rounded-md"
           onClick={handleToggleButton}

@@ -4,6 +4,7 @@ import Layout from '@/components/Layout';
 import HomePage from './routes/HomePage';
 import NotFound from './routes/NotFound';
 import ErrorPage from '../components/ErrorPage';
+import PentestPage from './routes/app/PentestPage';
 
 
 export const createAppRouter = () => {
@@ -16,6 +17,10 @@ export const createAppRouter = () => {
                 {
                     index: true,
                     element: <HomePage />
+                },
+                {
+                    path: "/pentest",
+                    element: <PentestPage />
                 },
                 {
                     path: "*",

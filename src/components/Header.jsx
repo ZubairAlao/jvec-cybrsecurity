@@ -26,7 +26,7 @@ const Header = () => {
     // Handle screen resizing to reset scroll on desktop view
     useEffect(() => {
         const handleResize = () => {
-            if (window.innerWidth >= 768 && toggle) {
+            if (window.innerWidth >= 1024 && toggle) {
                 // If on desktop view, reset toggle and remove scroll lock
                 setToggle(false);
                 enableBodyScroll(document.body);
@@ -68,22 +68,21 @@ const Header = () => {
                     <DesktopNav />
 
                     {/* Mobile Navigation */}
-                    <div ref={menuRef} className='md:hidden'>
+                    <div ref={menuRef} className='lg:hidden'>
                         <MobileNav toggle={toggle} handleToggleButton={handleToggleButton} />
                     </div>
 
                     <button
                         aria-label="Toggle navigation menu"
                         onClick={handleToggleButton}
-                        className='md:hidden'
+                        className='lg:hidden'
                     >
                         <MenuIcon className='h-fit w-[30px]' />
                     </button>
 
                     <button 
-                        className="text-[#ffffff] lg:px-11 lg:py-4 px-6 py-2 text-sm hidden md:block
+                        className="text-[#ffffff] lg:px-8 lg:py-3 px-6 py-2 text-sm hidden lg:block
                         transition-all duration-300 ease-in-out
-                        hover:shadow-lg hover:scale-100
                         active:translate-y-[2px] active:shadow-none cursor-pointer
                         btn-grad rounded-md"
                     >

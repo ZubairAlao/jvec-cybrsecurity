@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 
 const ContactUs = () => {
   return (
-    <section className='pb-[56px] md:pb-[72px] lg:pb-[150px]'>
+    <section className='py-[56px] md:py-[80px] lg:py-[120px] bg-[#060709]'>
         <div className="container flex items-center flex-col lg:flex-row justify-between">
             <div className='lg:max-w-[406px] space-y-6 md:space-y-7 mb-[56px]'>
                 <h2>READY TO GET STARTED</h2>
