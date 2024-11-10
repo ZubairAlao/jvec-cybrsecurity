@@ -48,7 +48,16 @@ export const navHeaders = [
             { id: 10, label: "Data Consultancy",  link:"#" },
             { id: 11, label: "Product Management",  link:"#" },
             { id: 12, label: "Project Management",  link:"#" },
-            { id: 13, label: "Predictive Analysis",  link:"#" }
+            { id: 13, label: "Predictive Analysis",  link:"#" },
+            { id: 14, label: "Technology Audit and Assurance", link: "#" },
+            { id: 15, label: "Compliance Consulting", link: "#" },
+            { id: 16, label: "Vulnerability Assessment", link: "#" },
+            { id: 17, label: "Penetration Testing", link: "#" },
+            { id: 18, label: "Corporate Cybersecurity Awareness Training", link: "#" },
+            { id: 19, label: "Cybersecurity Advisory and Consulting", link: "#" },
+            { id: 20, label: "Enterprise Application Software Development", link: "#" },
+            { id: 21, label: "Custom Software Development", link: "#" },
+            { id: 22, label: "E-Commerce Solutions", link: "#" }
         ]
     },
     {
@@ -274,7 +283,16 @@ export const JvecServicesLinks = [
     { id: 10, label: "Data Consultancy",  link:"#" },
     { id: 11, label: "Product Management",  link:"#" },
     { id: 12, label: "Project Management",  link:"#" },
-    { id: 13, label: "Predictive Analysis",  link:"#" }
+    { id: 13, label: "Predictive Analysis",  link:"#" },
+    { id: 14, label: "Technology Audit and Assurance", link: "#" },
+    { id: 15, label: "Compliance Consulting", link: "#" },
+    { id: 16, label: "Vulnerability Assessment", link: "#" },
+    { id: 17, label: "Penetration Testing", link: "#" },
+    { id: 18, label: "Corporate Cybersecurity Awareness Training", link: "#" },
+    { id: 19, label: "Cybersecurity Advisory and Consulting", link: "#" },
+    { id: 20, label: "Enterprise Application Software Development", link: "#" },
+    { id: 21, label: "Custom Software Development", link: "#" },
+    { id: 22, label: "E-Commerce Solutions", link: "#" }
   ]
 
   export const JvecTrainingLinks = [

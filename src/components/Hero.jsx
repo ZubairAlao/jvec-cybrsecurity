@@ -62,14 +62,14 @@ const Hero = () => {
               Protect Your Business with Expert-Led Penetration Testing.
             </motion.h1>
 
-            <motion.p
+            <motion.h2
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.6 }}
               className="text-base md:text-2xl lg:text-3xl"
             >
               Elevating your Business through cutting-edge ICT solutions
-            </motion.p>
+            </motion.h2>
           </motion.div>
           
           <motion.div

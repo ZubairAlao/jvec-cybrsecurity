@@ -68,7 +68,7 @@ const MobileNav = ({ toggle, handleToggleButton }) => {
         style={{ animationDelay: `${navHeaders.length * 0.1}s` }}
       >
         <button
-          className="text-[#ffffff] btn-grad py-4 px-11 text-sm md:hidden w-full
+          className="text-[#ffffff] btn-grad lg:px-11 lg:py-4 px-6 py-2 text-sm md:hidden w-full
             transition-all duration-300 ease-in-out
             hover:shadow-lg hover:scale-100
             active:translate-y-[2px] active:shadow-none cursor-pointer

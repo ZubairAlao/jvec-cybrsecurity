@@ -11,7 +11,7 @@ const PenetrationTestingServices = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 justify-center lg:w-[960px] md:max-w-[710px] lg:gap-24 gap-6 md:gap-7">
           <div className="space-y-6">
             <div className="space-y-6">
-              <h3 className="text-2xl font-semibold">Network Penetration Testing:</h3>
+              <h2 className="text-2xl font-semibold">Network Penetration Testing:</h2>
               <ul className="list-disc text-lg space-y-4 pl-5">
                 <li>Vulnerability scanning</li>
                 <li>Firewall testing</li>
@@ -20,7 +20,7 @@ const PenetrationTestingServices = () => {
               </ul>
             </div>
             <div className="space-y-6">
-              <h3 className="text-2xl font-semibold">Cloud Infrastructure Penetration Testing:</h3>
+              <h2 className="text-2xl font-semibold">Cloud Infrastructure Penetration Testing:</h2>
               <ul className="list-disc text-lg space-y-4 pl-5">
                 <li>Misconfigurations</li>
                 <li>Weak access controls</li>
@@ -32,7 +32,7 @@ const PenetrationTestingServices = () => {
 
           <div className="space-y-6 md:mt-7">
             <div className="space-y-6">
-              <h3 className="text-2xl font-semibold">Web Application Penetration Testing:</h3>
+              <h2 className="text-2xl font-semibold">Web Application Penetration Testing:</h2>
               <ul className="list-disc text-lg space-y-4 pl-5">
                 <li>Injection attacks</li>
                 <li>Cross-site scripting (XSS)</li>
@@ -41,7 +41,7 @@ const PenetrationTestingServices = () => {
               </ul>
             </div>
             <div className="space-y-6">
-              <h3 className="text-2xl font-semibold">Mobile Application Penetration Testing:</h3>
+              <h2 className="text-2xl font-semibold">Mobile Application Penetration Testing:</h2>
               <ul className="list-disc text-lg space-y-4 pl-5">
                 <li>Insecure data storage</li>
                 <li>Weak authentication</li>

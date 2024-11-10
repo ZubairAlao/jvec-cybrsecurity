@@ -8,7 +8,7 @@ const ContactUs = () => {
     <section className='pb-[56px] md:pb-[72px] lg:pb-[150px]'>
         <div className="container flex items-center flex-col lg:flex-row justify-between">
             <div className='lg:max-w-[406px] space-y-6 md:space-y-7 mb-[56px]'>
-                <h3>READY TO GET STARTED</h3>
+                <h2>READY TO GET STARTED</h2>
                 <p className='font-semibold text-2xl md:text-3xl lg:text-4xl'>Send us an Email</p>
                 <div className='space-y-4 md:space-y-7'>
                     <p>Join numerous corporations, organizations and businesses as they scale their teams, tap into new market opportunities and build innovative products with Jvec solutions.
