@@ -8,6 +8,7 @@ import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
 
 const Header = () => {
     const [toggle, setToggle] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false); //scrolling header from y0 change from transparent
     const menuRef = useRef(null);
 
     const handleToggleButton = () => {
@@ -49,6 +50,7 @@ const Header = () => {
       }
     };
 
+
     // Add event listener to detect outside clicks
     document.addEventListener('mousedown', handleClickOutside);
     
@@ -58,10 +60,26 @@ const Header = () => {
     };
   }, []);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      // Change 50 to the scroll position where you want the header to change
+      setIsScrolled(window.scrollY > 1);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
     return (
         <header className='flex justify-center items-center'>
-            <div className="fixed top-0 z-50 w-full bg-[#080808] shadow-lg border-b border-[#333333]">
-                <div className="py-6 bg-[#080808] flex justify-between items-center container">
+            <div className={`fixed top-0 z-50 w-full shadow-lg ${
+                        isScrolled ? 'bg-[#080808]' : 'bg-transparent'
+                    }`}>
+                <div 
+                    className={`py-6 flex justify-between items-center container duration-300 ${
+                        isScrolled ? 'bg-[#080808]' : 'bg-transparent'
+                    }`}
+                >
                     <Logo />
 
                     {/* Desktop Navigation */}

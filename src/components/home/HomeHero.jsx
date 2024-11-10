@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Button from '../ui/button/button';
 import { TypeAnimation } from 'react-type-animation';
+import HomeHeroBg from "@/assets/images/home-hero-bg.webp";
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
 import { TestmonialBrandLogos } from '@/constants';
@@ -17,12 +18,21 @@ const HomeHero = () => {
 
   return (
     <section 
-      className='mt-[81px] min-h-screen relative overflow-hidden flex justify-center'
+      className='pt-[81px] min-h-screen relative overflow-hidden flex justify-center items-center'
     >
+      <div
+        className="absolute z-10 top-0 left-0 w-screen h-full"
+        style={{
+          backgroundImage: `url(${HomeHeroBg})`,
+          backgroundPosition: '40% 55%',
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat',
+        }}
+      ></div>
       <div className='pt-40 lg:pt-24'>      
         <div className='space-y-9 text-center container relative z-20 max-w-[1100px]'>
           <div className='space-y-6'>
-            <h1 className="font-bold text-3xl md:text-5xl lg:text-5xl mb-2">
+            <h1 className="font-bold text-[1.875rem] md:text-[3rem] lg:text-[3.2rem] mb-2 leading-[1.2]">
               Software & Cybersecurity Solutions for Forward-thinking Businesses.
             </h1>
 
@@ -42,14 +52,15 @@ const HomeHero = () => {
           </div>
         </div>
 
-        <div className='absolute top-0 left-0 z-10 h-full bg-opacity-85 bg-[#000000] w-full'>
+        <div className='absolute top-0 left-0 z-10 h-full bg-opacity-5 bg-[#333ba5] w-full'>
         </div>
 
-        <div className='absolute left-0 bottom-20 lg:-bottom-10 w-full z-30 py-16 flex items-center px-8 curved-inward'>
+        <div className='lg:bottom-4 w-full relative z-30 py-16 flex items-center px-8 curved-inward'>
         <Splide
         options={{
           resetProgress: false,
           rewind: true,
+          width: "100%",
           perMove: 1,
           rewindSpeed: 3000,
           arrows: false,
@@ -78,7 +89,7 @@ const HomeHero = () => {
             <img 
               src={brand.image} 
               alt={brand.alt} 
-              className="w-fit h-[60px] md:h-[79px] lg:h-[79px] object-contain mx-auto" 
+              className="w-fit h-[48px] md:h-[72px] lg:h-[79px] object-contain mx-auto" 
               loading="lazy"
             />
           </SplideSlide>
