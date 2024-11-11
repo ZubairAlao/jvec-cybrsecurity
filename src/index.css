@@ -18,7 +18,7 @@ body {
 }
 
 .heading-font-sizes {
-  @apply text-[1.875rem] md:text-[3rem] lg:text-[3.5rem] leading-[1.2];
+  @apply text-[1.875rem] md:text-[3rem] lg:text-[3.2rem] leading-[1.2];
 }
 
 .pages-vertical-padding {
@@ -153,7 +153,7 @@ body::-webkit-scrollbar-thumb {
   height: 200px;
   -webkit-mask-image: radial-gradient(110% 50% at top, transparent 50%, #fff 51%);
           mask-image: radial-gradient(110% 50% at top, transparent 50%, #fff 51%);
-          background: linear-gradient(180deg, #080808 0%, #080808 70%, transparent 100%);
+          background: linear-gradient(180deg, #080808 0%, #080808 70%, #080808 100%);
 }
 
 .contact-input:focus {
@@ -183,4 +183,10 @@ body::-webkit-scrollbar-thumb {
   :root {
     --radius: 0.5rem;
   }
+}
+
+
+.trusted-ict-slider .splide__slide.is-active {
+  background: linear-gradient(to bottom, #080808, #1a1a1a) !important;
+  color: white !important;
 }

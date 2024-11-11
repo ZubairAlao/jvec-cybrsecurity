@@ -1,3 +1,8 @@
+// why-trust-us
+import PercentIcon from "@/assets/icons/why-trust-us/percent.svg"
+import BadgeIcon from "@/assets/icons/why-trust-us/badge.svg"
+import StarIcon from "@/assets/icons/why-trust-us/star.svg"
+
 import PCIDSSComplaintIcon from "@/assets/icons/compliance-certifications/pci-dss-complaint.svg"
 import ISO27001Icon from "@/assets/icons/compliance-certifications/iso-27001.svg"
 import CybersecurityIcon from "@/assets/icons/compliance-certifications/cyber-security-1-1.svg"
@@ -29,8 +34,6 @@ import ScentArtPrint from "@/assets/icons/testmonial-brands/scent-art-print.svg"
 import SdOnaiwiNigeria from "@/assets/icons/testmonial-brands/sd-onaiwi-nigeria.svg";
 import StresslessMovers from "@/assets/icons/testmonial-brands/stressless-movers.svg";
 import UchennaNnaji from "@/assets/icons/testmonial-brands/uchenna-nnaji.svg";
-
-
 
 
 import FacebookIcon from "@/assets/icons/social-logos/facebook.svg"
@@ -120,6 +123,29 @@ export const navHeaders = [
     }
 ]
 
+// home page
+export const WhyTrustUsData = [
+    {
+      title: "100% Client Satisfaction",
+      description:
+        "Our unwavering commitment to excellence empowers us to deliver impeccable services consistently exceeding expectations within every deadline.",
+        image: PercentIcon,
+    },
+    {
+      title: "7+ Years of Excellence",
+      description:
+        "Distinguished by our relentless pursuit of perfection, we seamlessly provide unparalleled services that redefine industry standards.",
+        image: BadgeIcon,
+    },
+    {
+      title: "5-Star Customer Support",
+      description:
+        "At the heart of our company beats a dedication to unmatched customer support, where we stand by our clients at every turn, offering unwavering assistance throughout their journey with us.",
+        image: StarIcon,
+    }
+  ];
+
+// pentest page
 export const WhyChooseJvecListOne = [
     {
         title: "1.",
