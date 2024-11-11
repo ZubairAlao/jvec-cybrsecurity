@@ -18,7 +18,7 @@ body {
 }
 
 .heading-font-sizes {
-  @apply text-[1.875rem] md:text-[3rem] lg:text-[3.2rem] leading-[1.2];
+  @apply text-[1.875rem] md:text-[3rem] lg:text-[3.2rem] leading-[1.1];
 }
 
 .pages-vertical-padding {

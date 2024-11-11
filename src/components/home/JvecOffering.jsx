@@ -33,6 +33,10 @@ const JvecOffering = () => {
                     </div>
                 ))}
             </div>
+
+            <div className='relative'>
+
+            </div>
         </div>
     </section>
   )

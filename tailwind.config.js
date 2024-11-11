@@ -21,19 +21,19 @@ export default {
   		},
   		spacing: {
 			// Define spacing for desktop as default
-			'desktop-small': '16px',
-			'desktop-medium': '24px',
-			'desktop-large': '32px',
+			'desktop-small': '28px',
+			'desktop-medium': '60px',
+			'desktop-large': '90px',
 	
 			// Define tablet spacing (optional)
-			'tablet-small': '12px',
-			'tablet-medium': '20px',
-			'tablet-large': '28px',
+			'tablet-small': '18px',
+			'tablet-medium': '48px',
+			'tablet-large': '60px',
 	
 			// Define mobile spacing
-			'mobile-small': '8px',
+			'mobile-small': '12px',
 			'mobile-medium': '16px',
-			'mobile-large': '24px',
+			'mobile-large': '32px',
 		  },
   	}
   },
