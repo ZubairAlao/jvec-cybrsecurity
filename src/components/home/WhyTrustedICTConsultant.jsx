@@ -18,7 +18,7 @@ const WhyTrustedICTConsultant = () => {
         interval: 2000,
         perPage: 2,
         gap: '1rem',
-        height: "450px",
+        height: '430px',
         direction: "ttb",
     };
 
@@ -36,7 +36,7 @@ const WhyTrustedICTConsultant = () => {
                     <Button children={"Learn More"} />
                 </div>
 
-                <div className="relative overflow-hidden rounded-lg shadow-lg text-gray-800 trusted-ict-slider">
+                <div className="relative overflow-hidden rounded-lg shadow-lg text-gray-800 trusted-ict-slider min-h-full">
                     <Splide options={options}>
                         {WhyTrustUsData.map((data, index) => (
                             <SplideSlide key={index} className="rounded-md shadow-md">
