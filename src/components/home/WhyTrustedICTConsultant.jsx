@@ -25,7 +25,7 @@ const WhyTrustedICTConsultant = () => {
     return (
         <section className="flex justify-center items-center pages-vertical-padding">
             <div className="container lg:flex gap-24 lg:space-y-0 space-y-20">
-                <div className="text-center lg:text-left space-y-mobile-medium lg:mx-auto">
+                <div className="text-center lg:text-left space-y-12 lg:mx-auto lg:w-1/2">
                     <h1 className='font-bold heading-font-sizes'>
                         Why We Are Your Trusted ICT Consultant
                     </h1>
@@ -36,7 +36,7 @@ const WhyTrustedICTConsultant = () => {
                     <Button children={"Learn More"} />
                 </div>
 
-                <div className="relative overflow-hidden rounded-lg shadow-lg text-gray-800 trusted-ict-slider min-h-full">
+                <div className="relative overflow-hidden rounded-lg shadow-lg text-gray-800 trusted-ict-slider min-h-full lg:w-1/2">
                     <Splide options={options}>
                         {WhyTrustUsData.map((data, index) => (
                             <SplideSlide key={index} className="rounded-md shadow-md">

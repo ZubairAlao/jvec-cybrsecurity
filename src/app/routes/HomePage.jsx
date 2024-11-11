@@ -3,6 +3,7 @@ import HomeHero from '@/components/home/HomeHero'
 import { Head } from '@/components/seo/Head'
 import WhyTrustedICTConsultant from '@/components/home/WhyTrustedICTConsultant'
 import JvecPioneering from '@/components/home/JvecPioneering'
+import JvecOffering from '@/components/home/JvecOffering'
 
 
 const HomePage = () => {
@@ -12,6 +13,7 @@ const HomePage = () => {
       <HomeHero />
       <WhyTrustedICTConsultant/>
       <JvecPioneering />
+      <JvecOffering />
     </>
   )
 } 
