@@ -24,12 +24,12 @@ const WhyTrustedICTConsultant = () => {
 
     return (
         <section className="flex justify-center items-center pages-vertical-padding">
-            <div className="container lg:flex gap-40 lg:scale-y-0 space-y-20">
-                <div className="text-center lg:text-left space-y-mobile-medium">
+            <div className="container lg:flex gap-24 lg:space-y-0 space-y-20">
+                <div className="text-center lg:text-left space-y-mobile-medium lg:mx-auto">
                     <h1 className='font-bold heading-font-sizes'>
                         Why We Are Your Trusted ICT Consultant
                     </h1>
-                    <p className='mt-2'>
+                    <p>
                         We unleash the potential of technology for your business
                     </p>
 
