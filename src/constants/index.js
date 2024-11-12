@@ -149,38 +149,38 @@ export const WhyTrustUsData = [
 export const WhyChooseJvecListOne = [
     {
         title: "1.",
-        text: "Unparalleled Benefits for Robust Cybersecurity:"
+        description: "Unparalleled Benefits for Robust Cybersecurity:"
     },
     {
         title: "Preemptive Defense Against Cyber Threats",
-        text: "Protect your most valuable data and systems by identifying and eliminating weaknesses before hackers exploit them. Our penetration tests expose potential entry points across your network, applications, and cloud infrastructure, keeping you one step ahead of attackers."
+        description: "Protect your most valuable data and systems by identifying and eliminating weaknesses before hackers exploit them. Our penetration tests expose potential entry points across your network, applications, and cloud infrastructure, keeping you one step ahead of attackers."
     },
     {
         title: "Comprehensive Compliance Support",
-        text: " JVEC’s testing protocols align with industry compliance standards like GDPR, PCI DSS, and ISO 27001, ensuring you meet regulatory requirements while safeguarding data integrity and confidentiality."
+        description: " JVEC’s testing protocols align with industry compliance standards like GDPR, PCI DSS, and ISO 27001, ensuring you meet regulatory requirements while safeguarding data integrity and confidentiality."
     },
     {
         title: "Actionable, Insightful Reporting",
-        text: " Beyond uncovering vulnerabilities, our detailed, accessible reports prioritize risks and outline specific, actionable remediation steps, empowering your team to strengthen security with clarity and confidence."
+        description: " Beyond uncovering vulnerabilities, our detailed, accessible reports prioritize risks and outline specific, actionable remediation steps, empowering your team to strengthen security with clarity and confidence."
     },
 ]
 
 export const WhyChooseJvecListTwo = [
     {
         title: "A Legacy of Security Leadership",
-        text: "Our Cyber Executive team brings over 44 years of combined experience across key industries, including Financial Services, Information Technology, and Healthcare, with a global footprint spanning Africa, North America, Europe, and the Middle East"
+        description: "Our Cyber Executive team brings over 44 years of combined experience across key industries, including Financial Services, Information Technology, and Healthcare, with a global footprint spanning Africa, North America, Europe, and the Middle East"
     },
     {
         title: "2.",
-        text: "Our Core Values: Trusted Expertise and Client Commitment"
+        description: "Our Core Values: Trusted Expertise and Client Commitment"
     },
     {
         title: "Tailored, Client-Centric Approach",
-        text: "Recognizing that each organization’s security landscape is unique, JVEC customizes testing strategies to address specific threats relevant to your industry, business model, and technological environment. We see our clients as partners in security, working closely with you at every step to enhance resilience."
+        description: "Recognizing that each organization’s security landscape is unique, JVEC customizes testing strategies to address specific threats relevant to your industry, business model, and technological environment. We see our clients as partners in security, working closely with you at every step to enhance resilience."
     },
     {
         title: "Transparent Collaboration and Continuous Support",
-        text: "Security doesn’t end with a test. We offer ongoing guidance and hands-on support, ensuring vulnerabilities are effectively mitigated and that your security infrastructure evolves to meet emerging threats."
+        description: "Security doesn’t end with a test. We offer ongoing guidance and hands-on support, ensuring vulnerabilities are effectively mitigated and that your security infrastructure evolves to meet emerging threats."
     },
 ]
 
@@ -262,23 +262,23 @@ export const ComplianceCertificates =[
 export const JvecApproachPenetrationAccordion = [
     {
         title: "Alignment with Business Goal",
-        text: "JVEC ensures every technical recommendation aligns seamlessly with your business objectives, maximizing return on investment by focusing on solutions that drive value and support growth."
+        description: "JVEC ensures every technical recommendation aligns seamlessly with your business objectives, maximizing return on investment by focusing on solutions that drive value and support growth."
     },
     {
         title: "Proactive Defense",
-        text: "We prioritize Planning, Preparation, and Prevention, moving beyond reactionary troubleshooting to provide continuous, proactive security that strengthens your defense before an incident can occur."
+        description: "We prioritize Planning, Preparation, and Prevention, moving beyond reactionary troubleshooting to provide continuous, proactive security that strengthens your defense before an incident can occur."
     },
     {
         title: "No-Surprise, Transparent Process",
-        text: "Our “No Surprise” policy ensures clarity and transparency from planning through execution, giving you confidence and control over your security strategy at every stage."
+        description: "Our “No Surprise” policy ensures clarity and transparency from planning through execution, giving you confidence and control over your security strategy at every stage."
     },
     {
         title: "Operational Continuity",
-        text: "With efficient and thorough penetration tests, we help you maintain essential operations, minimizing any interruptions to your day-to-day activities while protecting your critical assets."
+        description: "With efficient and thorough penetration tests, we help you maintain essential operations, minimizing any interruptions to your day-to-day activities while protecting your critical assets."
     },
     {
         title: "Personalized Consultative Experience",
-        text: "We value personalized service, working closely with your team to ensure you’re never “lost in the shuffle.” Our dedicated experts guide you through each step of the process, making complex security strategies accessible and actionable."
+        description: "We value personalized service, working closely with your team to ensure you’re never “lost in the shuffle.” Our dedicated experts guide you through each step of the process, making complex security strategies accessible and actionable."
     },
 ]
 
