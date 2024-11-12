@@ -14,7 +14,7 @@ const ClientTestimonies = () => {
                         In today's dynamic digital landscape, where technology is the cornerstone of success, our ICT Consulting firm emerges as a beacon of innovation, empowering businesses to transcend the boundaries of the ordinary and embrace the extraordinary. With our unwavering commitment to premium quality, we seamlessly integrate cutting-edge ICT solutions into your business fabric, propelling you towards a future of limitless possibilities, where efficiency, productivity, and growth know no bounds.
                     </p>
                 </div>
-                <img src={SphereIcon} alt="sphere" loading="lazy" className="mx-auto max-w-[600px]" />
+                <img src={SphereIcon} alt="sphere" loading="lazy" className="mx-auto max-w-[600px] w-full" />
             </div>
 
             <div className="lg:flex flex-row-reverse gap-6 lg:space-y-0 items-center">
@@ -28,7 +28,7 @@ const ClientTestimonies = () => {
                         <ArrowRight />
                     </div>
                 </div>
-                <img src={SphereIcon} alt="sphere" loading="lazy" className="mx-auto max-w-[600px]" />
+                <img src={SphereIcon} alt="sphere" loading="lazy" className="mx-auto w-full max-w-[600px]" />
             </div>
 
             <div>
