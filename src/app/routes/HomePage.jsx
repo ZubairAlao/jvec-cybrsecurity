@@ -6,6 +6,7 @@ import JvecPioneering from '@/components/home/JvecPioneering'
 import JvecOffering from '@/components/home/JvecOffering'
 import ComplianceCertifications from '@/components/home/ComplianceCertifications'
 import ClientTestimonies from '@/components/home/ClientTestimonies'
+import CertifiedDunBradstreet from '@/components/home/CertifiedDunBradstreet'
 
 
 const HomePage = () => {
@@ -18,6 +19,7 @@ const HomePage = () => {
       <JvecOffering />
       <ComplianceCertifications />
       <ClientTestimonies />
+      <CertifiedDunBradstreet />
     </>
   )
 } 

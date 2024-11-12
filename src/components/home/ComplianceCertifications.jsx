@@ -4,15 +4,15 @@ import { ComplianceCertificates, TestmonialBrandLogos } from '@/constants'
 const ComplianceCertifications = () => {
   return (
     <section className='pages-vertical-padding'>
-        <div className='container space-y-mobile-large md:space-y-tablet-medium flex items-center flex-col'>
-          <div className='space-y-mobile-large w-full md:max-w-[660px] mx-auto lg:max-w-[964px] text-center'>
+        <div className='container space-y-8 md:space-y-12 flex items-center flex-col'>
+          <div className='space-y-8 w-full md:max-w-[660px] mx-auto lg:max-w-[964px] text-center'>
               <h1 className='text-[1.5rem] md:text-[2.8rem] lg:text-[3.75rem] leading-[1.2] font-semibold'>Compliance Certifications And Standards We Specialize In
               </h1>
               <p>Elevate Your Organization's Security Posture with Our Compliance/Standards Consulting Services.
               </p>
           </div>
 
-          <div className='w-full bg-white rounded-lg shadow-md grid grid-cols-3 md:grid-cols-6 justify-center items-center gap-mobile-medium p-8'>
+          <div className='w-full bg-white rounded-lg shadow-md grid grid-cols-3 md:grid-cols-6 justify-center items-center gap-4 p-8'>
             {ComplianceCertificates.map((certifications, index) => (
                 <div key={certifications.alt} className='flex justify-center items-center'>
                   <img src={certifications.image} alt={certifications.alt} loading="lazy"/>
@@ -21,7 +21,7 @@ const ComplianceCertifications = () => {
           </div>
       </div>
 
-      <h3 className='heading-font-sizes text-center my-mobile-large md:my-tablet-large font-semibold container'>They Trust Us, and so can You</h3>
+      <h3 className='heading-font-sizes text-center my-8 md:my-14font-semibold container'>They Trust Us, and so can You</h3>
 
       <div className='grid justify-center h-fit  grid-cols-2 md:grid-cols-4 gap-8 bg-gradient-to-r from-[#1e1c1c] via-[#222222] to-[#080808] p-8'>
         {TestmonialBrandLogos.map((brand, index) => (

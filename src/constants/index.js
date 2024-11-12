@@ -70,7 +70,7 @@ export const navHeaders = [
             { id: 13, label: "Predictive Analysis",  link:"#" },
             { id: 14, label: "Technology Audit and Assurance", link: "#" },
             { id: 15, label: "Compliance Consulting", link: "#" },
-            { id: 16, label: "Vulnerability Assessment", link: "#" },
+            { id: 16, label: "Vulnerability Assessment", link: "/vulnerability-assessment" },
             { id: 17, label: "Penetration Testing", link: "/pentest" },
             { id: 18, label: "Corporate Cybersecurity Awareness Training", link: "#" },
             { id: 19, label: "Cybersecurity Advisory and Consulting", link: "#" },
@@ -284,53 +284,53 @@ export const JvecApproachPenetrationAccordion = [
 
 export const TestmonialBrandLogos = [
     {
-      image: CareerVerified,
-      alt: "Career Verified"
-    },
-    {
       image: Curacel,
       alt: "Curacel"
-    },
-    {
-      image: GoldlandInteriorFurniture,
-      alt: "Goldland Interior Furniture"
-    },
-    {
-      image: Mes,
-      alt: "MES"
-    },
-    {
-      image: ParoFoundation,
-      alt: "Paro Foundation"
     },
     {
       image: Oak,
       alt: "OAK"
     },
     {
-      image: OvisionOne,
-      alt: "Ovision One"
+      image: StresslessMovers,
+      alt: "Stressless Movers"
+    },
+    {
+      image: Mes,
+      alt: "MES"
+    },
+    {
+      image: CareerVerified,
+      alt: "Career Verified"
     },
     {
       image: PentAgency,
       alt: "Pent Agency"
     },
     {
-      image: ScentArtPrint,
-      alt: "Scent Art Print"
+      image: GoldlandInteriorFurniture,
+      alt: "Goldland Interior Furniture"
     },
     {
       image: SdOnaiwiNigeria,
       alt: "SD Onaiwi Nigeria"
     },
     {
-      image: StresslessMovers,
-      alt: "Stressless Movers"
-    },
-    {
       image: UchennaNnaji,
       alt: "Uchenna Nnaji"
-    }
+    },
+    {
+      image: OvisionOne,
+      alt: "Ovision One"
+    },
+    {
+      image: ScentArtPrint,
+      alt: "Scent Art Print"
+    },
+    {
+      image: ParoFoundation,
+      alt: "Paro Foundation"
+    },
   ];
   
 //   this is fast way of mapping loading all images without writing names for each file names
@@ -381,7 +381,7 @@ export const JvecServicesLinks = [
     { id: 13, label: "Predictive Analysis",  link:"#" },
     { id: 14, label: "Technology Audit and Assurance", link: "#" },
     { id: 15, label: "Compliance Consulting", link: "#" },
-    { id: 16, label: "Vulnerability Assessment", link: "#" },
+    { id: 16, label: "Vulnerability Assessment", link: "/vulnerability-assessment" },
     { id: 17, label: "Penetration Testing", link: "/pentest" },
     { id: 18, label: "Corporate Cybersecurity Awareness Training", link: "#" },
     { id: 19, label: "Cybersecurity Advisory and Consulting", link: "#" },

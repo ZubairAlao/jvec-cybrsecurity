@@ -1,5 +1,5 @@
-import HeroBgOptimized from "@/assets/images/hero-bg.webp"
-import HeroBg from "@/assets/images/hero-bg.jpg"
+import OfferingImg from "@/assets/images/our-offering-img.jpg"
+import Button from "../ui/button/button";
 
 export const offeringServices = [
     "Technology Audit and Assurance",
@@ -27,25 +27,28 @@ const JvecOffering = () => {
                 </p>
             </div>
 
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
-                {offeringServices.map((sevice, index) => (
-                    <div key={index} className='bg-[#726E6E] min-h-[90px] max-w-96 flex items-center justify-center text-center p-4'>
-                        <p>{sevice}</p>
-                    </div>
-                ))}
+            <div className="space-y-8">
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
+                    {offeringServices.map((sevice, index) => (
+                        <div key={index} className='bg-[#222222] rounded-md border border-[#726E6E] min-h-[90px] max-w-96 flex items-center justify-center text-center p-4'>
+                            <p>{sevice}</p>
+                        </div>
+                    ))}
+                </div>
+                <Button children={"view More"} />
             </div>
 
             <div className='relative'>
                 <div
-                    className="absolute z-10 top-0 left-0 w-full h-full bg-cover bg-center"
+                    className="absolute z-10 top-0 left-0 w-full h-full bg-cover bg-center rounded-md"
                     style={{
-                        backgroundImage: `url(${HeroBgOptimized})`,
-                        backgroundPosition: 'top center',
+                        backgroundImage: `url(${OfferingImg})`,
+                        backgroundPosition: 'center',
                         backgroundSize: 'cover',
                         backgroundRepeat: 'no-repeat',
                     }}
                 ></div>
-                <div className="relative z-20 bg-black bg-opacity-90 w-full min-h-[400px] lg:min-h-[550px] flex items-center flex-col justify-center">
+                <div className="relative z-20 w-full min-h-[400px] lg:min-h-[550px] flex items-center flex-col justify-center">
                         <div className="max-w-[860px] space-y-6 p-4">
                             <h1 className='font-bold heading-font-sizes leading-6'>A Legacy of Security Leadership</h1>
                             <p>Our Cyber Executive team brings over 45 years of combined experience across key industries, including Financial Services, Information Technology, and Healthcare, with a global footprint spanning Africa, North America, Europe, and the Middle East.</p>
