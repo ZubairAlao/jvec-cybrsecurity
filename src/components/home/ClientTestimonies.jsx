@@ -22,7 +22,7 @@ const ClientTestimonies = () => {
                     <p>
                         Brands choose us for the unparalleled fusion of innovation and reliability. We stand as a beacon of trust, translating visions into exceptional digital experiences. Our adept team of experts craft tailor-made solutions, ensuring every brand journey is unique and impactful.
                     </p>
-                    <div className="flex justify-end items-center gap-4 text-orange-600">
+                    <div className="flex justify-end items-center gap-4 text-[#FFAB20]">
                         <Link children={"Read More"} />
                         <ArrowRight />
                     </div>
