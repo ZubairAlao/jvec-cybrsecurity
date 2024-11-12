@@ -4,6 +4,8 @@ import { Head } from '@/components/seo/Head'
 import WhyTrustedICTConsultant from '@/components/home/WhyTrustedICTConsultant'
 import JvecPioneering from '@/components/home/JvecPioneering'
 import JvecOffering from '@/components/home/JvecOffering'
+import ComplianceCertifications from '@/components/home/ComplianceCertifications'
+import ClientTestimonies from '@/components/home/ClientTestimonies'
 
 
 const HomePage = () => {
@@ -14,6 +16,8 @@ const HomePage = () => {
       <WhyTrustedICTConsultant/>
       <JvecPioneering />
       <JvecOffering />
+      <ComplianceCertifications />
+      <ClientTestimonies />
     </>
   )
 } 

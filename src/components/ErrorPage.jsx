@@ -7,8 +7,8 @@ const ErrorPage = () => {
     console.log(error);
     
   return (
-    <section className="flex flex-col items-center justify-center min-h-screen bg-black">
-      <div className="container py-5">
+    <section className="bg-black">
+      <div className="container flex flex-col items-center justify-center min-h-screen py-5">
         <h1 className="text-[36px] font-bold text-red-500">{error.message}</h1>
         <p className="text-[30px]  font-light mb-8 mt-4">
           Oops! 
