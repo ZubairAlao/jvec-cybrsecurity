@@ -6,6 +6,11 @@ import NotFound from './routes/NotFound';
 import ErrorPage from '../components/ErrorPage';
 import PentestPage from './routes/app/PentestPage';
 import VulnerabilityPage from './routes/app/VulnerabilityPage';
+import ConsultingAdvisoryPage from './routes/app/ConsultingAdvisoryPage';
+import AuditPage from './routes/app/AuditPage';
+import IndustryPage from './routes/app/IndustryPage';
+import CompliancePage from './routes/app/CompliancePage';
+import CyberSecurityPage from './routes/app/CyberSecurityPage';
 
 
 export const createAppRouter = () => {
@@ -26,6 +31,26 @@ export const createAppRouter = () => {
                 {
                     path: "/vulnerability-assessment",
                     element: <VulnerabilityPage />
+                },
+                {
+                    path: "/consulting-advisory",
+                    element: <ConsultingAdvisoryPage />
+                },
+                {
+                    path: "/audit",
+                    element: <AuditPage />
+                },
+                {
+                    path: "/industry",
+                    element: <IndustryPage />
+                },
+                {
+                    path: "/compliance",
+                    element: <CompliancePage />
+                },
+                {
+                    path: "/cyber-security",
+                    element: <CyberSecurityPage />
                 },
                 {
                     path: "*",

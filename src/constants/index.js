@@ -62,14 +62,14 @@ export const navHeaders = [
             { id: 5, label: "Product Design",  link:"#" },
             { id: 6, label: "Graphic Design",  link:"#" },
             { id: 7, label: "Motion Design / Video Editing",  link:"#" },
-            { id: 8, label: "Consulting",  link:"#" },
+            { id: 8, label: "Consulting",  link:"/consulting-advisory" },
             { id: 9, label: "Corporate Training",  link:"#" },
             { id: 10, label: "Data Consultancy",  link:"#" },
             { id: 11, label: "Product Management",  link:"#" },
             { id: 12, label: "Project Management",  link:"#" },
             { id: 13, label: "Predictive Analysis",  link:"#" },
-            { id: 14, label: "Technology Audit and Assurance", link: "#" },
-            { id: 15, label: "Compliance Consulting", link: "#" },
+            { id: 14, label: "Technology Audit and Assurance", link: "/audit" },
+            { id: 15, label: "Compliance Consulting", link: "/compliance" },
             { id: 16, label: "Vulnerability Assessment", link: "/vulnerability-assessment" },
             { id: 17, label: "Penetration Testing", link: "/pentest" },
             { id: 18, label: "Corporate Cybersecurity Awareness Training", link: "#" },
@@ -102,10 +102,10 @@ export const navHeaders = [
             { id: 8, label: "Motion Graphics / Video Editing", link:"#" },
             { id: 9, label: "Software Development", link:"#" },
             { id: 10, label: "Mobile App Development", link:"#" },
-            { id: 11, label: "Cyber Security", link:"#" },
+            { id: 11, label: "Cyber Security", link:"/cyber-security" },
             { id: 12, label: "Digital Literacy", link:"#" },
             { id: 13, label: "Digital Marketing", link:"#" },
-            { id: 14, label: "Business Development Management", link:"#" }
+            { id: 14, label: "Business Development Management", link:"/industry" }
         ]
     },
     {
@@ -373,14 +373,14 @@ export const JvecServicesLinks = [
     { id: 5, label: "Product Design",  link:"#" },
     { id: 6, label: "Graphic Design",  link:"#" },
     { id: 7, label: "Motion Design / Video Editing",  link:"#" },
-    { id: 8, label: "Consulting",  link:"#" },
+    { id: 8, label: "Consulting",  link:"/consulting-advisory" },
     { id: 9, label: "Corporate Training",  link:"#" },
     { id: 10, label: "Data Consultancy",  link:"#" },
     { id: 11, label: "Product Management",  link:"#" },
     { id: 12, label: "Project Management",  link:"#" },
     { id: 13, label: "Predictive Analysis",  link:"#" },
-    { id: 14, label: "Technology Audit and Assurance", link: "#" },
-    { id: 15, label: "Compliance Consulting", link: "#" },
+    { id: 14, label: "Technology Audit and Assurance", link: "/audit" },
+    { id: 15, label: "Compliance Consulting", link: "/compliance" },
     { id: 16, label: "Vulnerability Assessment", link: "/vulnerability-assessment" },
     { id: 17, label: "Penetration Testing", link: "/pentest" },
     { id: 18, label: "Corporate Cybersecurity Awareness Training", link: "#" },
@@ -401,10 +401,10 @@ export const JvecServicesLinks = [
     { id: 8, label: "Motion Graphics / Video Editing", link:"#" },
     { id: 9, label: "Software Development", link:"#" },
     { id: 10, label: "Mobile App Development", link:"#" },
-    { id: 11, label: "Cyber Security", link:"#" },
+    { id: 11, label: "Cyber Security", link:"/cyber-security" },
     { id: 12, label: "Digital Literacy", link:"#" },
     { id: 13, label: "Digital Marketing", link:"#" },
-    { id: 14, label: "Business Development Management", link:"#" }
+    { id: 14, label: "Business Development Management", link:"/industry" }
   ];
 
   export const JvecAboutLinks = [

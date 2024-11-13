@@ -23,7 +23,7 @@ const ComplianceCertifications = () => {
 
       <h3 className='heading-font-sizes text-center my-8 md:my-14font-semibold container'>They Trust Us, and so can You</h3>
 
-      <div className='grid justify-center h-fit  grid-cols-2 md:grid-cols-4 gap-8 bg-gradient-to-r from-[#1e1c1c] via-[#222222] to-[#080808] p-8'>
+      <div className='grid justify-center h-fit  grid-cols-2 md:grid-cols-4  lg:grid-cols-6 gap-8 bg-gradient-to-r from-[#1e1c1c] via-[#222222] to-[#080808] p-8'>
         {TestmonialBrandLogos.map((brand, index) => (
           <img key={index} src={brand.image} alt={brand.alt} className="w-full h-[60px] md:h-[79px] lg:h-[79px] flex justify-center items-center" loading="lazy" />
         ))}
