@@ -5,7 +5,7 @@ import LargeCTAImg from "@/assets/images/cta-img.jpg"
 
 const ConsultatingCTA = () => {
   return (
-    <section className='relative pages-vertical-padding overflow-hidden space-y-8 md:space-y-14'>
+    <section className='relative pages-vertical-padding overflow-hidden c'>
         <div className='flex md:flex-row-reverse flex-col justify-center lg:gap-12 gap-8 lg:container'>
             <div className='container space-y-8 text-center md:text-right'>
                 <h1 className='heading-font-sizes font-semibold'><span className="md:leading-[1.2]">Strengthen Your Organization with JVEC’s Advisory and Consulting Services</span></h1>

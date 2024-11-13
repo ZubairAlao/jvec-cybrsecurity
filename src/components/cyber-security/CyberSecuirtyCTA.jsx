@@ -5,7 +5,7 @@ import LargeCyberSecurityCTAImg from "@/assets/images/cyber-security-focused.jpg
 
 const CyberSecuirtyCTA = () => {
   return (
-    <section className='relative pages-vertical-padding overflow-hidden space-y-8 md:space-y-14'>
+    <section className='relative pages-vertical-padding overflow-hidden space-y-20'>
         <div className='flex md:flex-row-reverse flex-col justify-center lg:gap-12 gap-8 lg:container'>
             <div className='container space-y-8 text-center md:text-right'>
                 <h1 className='heading-font-sizes font-semibold'><span className="md:leading-[1.2]">Invest in a Security-Focused Culture Today</span></h1>

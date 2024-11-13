@@ -26,7 +26,7 @@ const securityFeatures = [
 
 const IndustryJvecAdvantages = () => {
   return (
-    <section>
+    <section className='pages-vertical-padding overflow-hidden'>
         <div className='overflow-hidden lg:container'>
             <h1 className='heading-font-sizes font-semibold container lg:p-0 mb-8 text-center md:text-left lg:max-w-[700px] ml-0'>Our Vulnerability Assessment Services</h1>
 

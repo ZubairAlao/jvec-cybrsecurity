@@ -56,6 +56,7 @@ const DesktopNav = () => {
                         <Link
                             key={submenu.label}
                             to={submenu.link}
+                            onClick={handleMouseLeave}
                             className="block max-w-[250px] lg:text-sm text-xs text-neutral-400 hover:text-[#FFA000]"
                         >
                             {submenu.label}
